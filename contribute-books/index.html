@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css"> 
+    <title>Contribute Book</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="text-center">Contribute Book</h2>
+        <form id="contributeForm" enctype="multipart/form-data">
+
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" class="form-control" id="title" name="title" required>
+            </div>
+
+            <div class="form-group">
+                <label for="author">Author:</label>
+                <input type="text" class="form-control" id="author" name="author" required>
+            </div>
+
+            <div class="form-group">
+                <label for="genre">Genre:</label>
+                <input type="text" class="form-control" id="genre" name="genre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea class="form-control" id="description" name="description" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="file">Upload E-Book (PDF, etc.):</label>
+                <input type="file" class="form-control" id="file" name="file" required>
+            </div>
+
+            <div class="form-group">
+                <label for="coverImage">Cover Image URL:</label>
+                <input type="url" class="form-control" id="coverImage" name="coverImage">
+            </div>
+
+
+            <div class="form-group">
+                <label for="agreement" class="form-check-label">
+                    
+                    I agree to the terms and conditions. <input type="checkbox" class="form-check-input" id="agreement" name="agreement" required>
+                </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Contribute Book</button>
+        </form>
+    </div>
+
+     <!-- jQuery file
+    <script src="js/jquery-3.4.1.min.js"></script>
+    
+
+    <!--  JavaScript file -->
+    <!-- <script src="cb.js"></script> --> 
+</body>
+
+</html>
