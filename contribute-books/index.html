@@ -25,18 +25,39 @@
             </div>
 
             <div class="form-group">
-                <label for="genre">Genre:</label>
-                <input type="text" class="form-control" id="genre" name="genre" required>
+                <label for="category">Category:</label>
+                <select class="form-control" id="category" name="category" required>
+                    <option value="">Select Category</option>
+                    <option value="Fiction">Fiction</option>
+                    <option value="Non-Fiction">Non-Fiction</option>
+                    <option value="Science">Science</option>
+                    <option value="Technology">Technology</option>
+                    <option value="Engineering">Engineering</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="History">History</option>
+                    <option value="Geography">Geography</option>
+                    <option value="Politics">Politics</option>
+                    <option value="Philosophy">Philosophy</option>
+                    <option value="Religion">Religion</option>
+                    <option value="Art">Art</option>
+                    <option value="Music">Music</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Cooking">Cooking</option>
+                    <option value="Health">Health</option>
+                    <option value="Fitness">Fitness</option>
+                    <option value="Travel">Travel</option>
+                    <option value="Other">Other</option>
+                </select>
             </div>
 
             <div class="form-group">
                 <label for="description">Description:</label>
-                <textarea class="form-control" id="description" name="description" rows="4" required></textarea>
+                <textarea rows="5" class="form-control" id="description" name="description" required></textarea>
             </div>
 
             <div class="form-group">
-                <label for="file">Upload E-Book (PDF, etc.):</label>
-                <input type="file" class="form-control" id="file" name="file" required>
+                <label for="bookFile">Book File:</label>
+                <input type="file" class="form-control" id="bookFile" name="bookFile" required>
             </div>
 
             <div class="form-group">
@@ -44,13 +65,13 @@
                 <input type="url" class="form-control" id="coverImage" name="coverImage">
             </div>
 
-
             <div class="form-group">
                 <label for="agreement" class="form-check-label">
                     
-                    I agree to the terms and conditions. <input type="checkbox" class="form-check-input" id="agreement" name="agreement" required>
+                     I agree to the <a href="terms.html">Terms and Conditions</a> <input type="checkbox" class="form-check-input" id="agreement" name="agreement" required> 
                 </label>
             </div>
+
 
             <button type="submit" class="btn btn-primary">Contribute Book</button>
         </form>
