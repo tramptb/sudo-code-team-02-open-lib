@@ -1,144 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" type=“text/css” href="css/cb-form.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <title>Contribute Book</title>
-    
-  </head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" type=“text/css” href="css/cb-form.css" />
 
-  <body>
-    <div class="container">
+  <title>Contribute Book</title>
 
-      <h2 class="text-center">Contribute Book</h2>
-      <form id="contributeForm" enctype="multipart/form-data">
-        <div class="form-group">
-          <label for="title">Title:</label>
-          <input
-            type="text"
-            class="form-control"
-            id="title"
-            name="title"
-            required
-          />
-        </div>
+</head>
 
-        <div class="form-group">
-          <label for="author">Author:</label>
-          <input
-            type="text"
-            class="form-control"
-            id="author"
-            name="author"
-            required
-          />
-        </div>
+<body>
+  <div class="container">
 
-        <div class="form-group">
-          <label for="category">Category:</label>
-          <select class="form-control" id="category" name="category" required>
-            <option value="">Select Category</option>
-            <option value="Fiction">Fiction</option>
-            <option value="Non-Fiction">Non-Fiction</option>
-            <option value="Science">Science</option>
-            <option value="Technology">Technology</option>
-            <option value="Engineering">Engineering</option>
-            <option value="Mathematics">Mathematics</option>
-            <option value="History">History</option>
-            <option value="Geography">Geography</option>
-            <option value="Politics">Politics</option>
-            <option value="Philosophy">Philosophy</option>
-            <option value="Religion">Religion</option>
-            <option value="Art">Art</option>
-            <option value="Music">Music</option>
-            <option value="Sports">Sports</option>
-            <option value="Cooking">Cooking</option>
-            <option value="Health">Health</option>
-            <option value="Fitness">Fitness</option>
-            <option value="Travel">Travel</option>
-            <option value="Other">Other</option>
-          </select>
-        </div>
+    <h2 class="text-center">Contribute Book</h2>
+    <form id="contributeForm" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="title">Title:</label>
+        <input type="text" class="form-control" id="title" name="title" required />
+      </div>
 
-        <div class="form-group">
-          <label for="description">Description:</label>
-          <textarea
-            rows="5"
-            class="form-control"
-            id="description"
-            name="description"
-            required
-          ></textarea>
-        </div>
+      <div class="form-group">
+        <label for="author">Author:</label>
+        <input type="text" class="form-control" id="author" name="author" required />
+      </div>
 
-        <div class="form-group">
-          <label for="bookFile">Book File:</label>
-          <input
-            type="file"
-            class="form-control"
-            id="bookFile"
-            name="bookFile"
-            required
-          />
-        </div>
+      <div class="form-group">
+        <label for="category">Category:</label>
+        <select class="form-control" id="category" name="category" required>
+          <option value="">Select Category</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Non-Fiction">Non-Fiction</option>
+          <option value="Science">Science</option>
+          <option value="Technology">Technology</option>
+          <option value="Engineering">Engineering</option>
+          <option value="Mathematics">Mathematics</option>
+          <option value="History">History</option>
+          <option value="Geography">Geography</option>
+          <option value="Politics">Politics</option>
+          <option value="Philosophy">Philosophy</option>
+          <option value="Religion">Religion</option>
+          <option value="Art">Art</option>
+          <option value="Music">Music</option>
+          <option value="Sports">Sports</option>
+          <option value="Cooking">Cooking</option>
+          <option value="Health">Health</option>
+          <option value="Fitness">Fitness</option>
+          <option value="Travel">Travel</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
 
-        <div class="form-group">
-          <label for="coverImage">Cover Image URL:</label>
-          <input
-            type="url"
-            class="form-control"
-            id="coverImage"
-            name="coverImage"
-          />
-        </div>
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea rows="5" class="form-control" id="description" name="description" required></textarea>
+      </div>
 
-        <div class="form-group">
-          <label for="contributorName">Contributor Name:</label>
-          <input
-            type="text"
-            class="form-control"
-            id="contributorName"
-            name="contributorName"
-            required
-          />
-        </div>
+      <div class="form-group">
+        <label for="bookFile">Book File:</label>
+        <input type="file" class="form-control" id="bookFile" name="bookFile" required />
+      </div>
 
-        <div class="form-group">
-          <label for="contributorEmail">Contributor Email:</label>
-          <input
-            type="email"
-            class="form-control"
-            id="contributorEmail"
-            name="contributorEmail"
-            required
-          />
-        </div>
+      <div class="form-group">
+        <label for="coverImage">Cover Image URL:</label>
+        <input type="url" class="form-control" id="coverImage" name="coverImage" />
+      </div>
 
-        <div class="form-group">
-          <label for="agreement" class="form-check-label">
-            I agree to the <a href="terms.html">Terms and Conditions</a>
-            <input
-              type="checkbox"
-              class="form-check-input"
-              id="agreement"
-              name="agreement"
-              required
-            />
-          </label>
-        </div>
+      <div class="form-group">
+        <label for="contributorName">Contributor Name:</label>
+        <input type="text" class="form-control" id="contributorName" name="contributorName" required />
+      </div>
 
-        <button type="submit" class="btn btn-primary">Contribute Book</button>
-      </form>
-    </div>
-  </body>
+      <div class="form-group">
+        <label for="contributorEmail">Contributor Email:</label>
+        <input type="email" class="form-control" id="contributorEmail" name="contributorEmail" required />
+      </div>
+
+      <div class="form-group">
+        <label for="agreement" class="form-check-label">
+          I agree to the <a href="terms.html">Terms and Conditions</a>
+          <input type="checkbox" class="form-check-input" id="agreement" name="agreement" required />
+        </label>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Contribute Book</button>
+    </form>
+  </div>
+</body>
+
 </html>
