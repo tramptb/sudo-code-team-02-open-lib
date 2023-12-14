@@ -23,7 +23,7 @@ body {
   background-color: #f8f9fa;
   color: #495057;
   font-family: var(--font-family);
-  font-size: var(--font-size);  
+  font-size: var(--font-size);
 }
 
 .container {
@@ -46,11 +46,10 @@ h2 {
 }
 
 label {
-    display: block;
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 10px;
-    color: var(--primary-color);
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 5px; 
 }
 
 .form-control {
@@ -74,25 +73,13 @@ label {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-.checkbox-label {
+.form-check-label {
   display: block;
-  font-size: 16px;
+  font-size: var(--font-size);
   font-weight: 400;
-  margin-bottom: 10px;
-  color: var(--primary-color);
+  margin-bottom: 5px;
 }
 
-.checkbox {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: var(--secondary-color);
-  border: 1px solid var(--border-color);
-  border-radius: var(--border-radius);
-  margin-right: 10px;
-  vertical-align: middle;
-  cursor: pointer;
-}
 
 .checkbox:hover {
   border-color: var(--border-color-hover);
@@ -105,8 +92,6 @@ label {
   font-size: var(--font-size);
   font-family: var(--font-family);
   font-weight: 400;
-  color: var(--button-color);
-  background-color: var(--button-background);
   border: 1px solid var(--button-background);
   border-radius: var(--border-radius);
   cursor: pointer;
@@ -115,4 +100,3 @@ label {
 .btn:hover {
   background-color: #0056b3;
 }
-
