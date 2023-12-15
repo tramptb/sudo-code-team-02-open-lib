@@ -8,7 +8,7 @@
   --input-padding: 0.75em;
   --button-background: #0069d9;
   --button-color: #fff;
-  --border-radius: 2px; 
+  --border-radius: 2px;
   --border-color: #ced4da;
   --border-color-hover: #80bdff;
 }
@@ -46,10 +46,15 @@ label {
   margin-bottom: 5px;
   padding-left: 5px;
   cursor: pointer;
+  font-weight: bolder;
 }
 
 .spacer {
   margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
 }
 
 .form-control {
@@ -73,19 +78,19 @@ label {
 .form-check-label {
   font-size: var(--font-size);
   font-weight: 400;
-  margin-bottom: 5px;
   padding-left: 5px;
   cursor: pointer;
 }
 
 .form-check-input {
-  display: inline-block;  
+  display: inline-block;
   cursor: pointer;
 }
 
 .term {
   display: inline-block;
 }
+
 .checkbox:hover {
   border-color: var(--border-color-hover);
 }
@@ -105,4 +110,3 @@ label {
 .btn:hover {
   background-color: #0056b3;
 }
-
