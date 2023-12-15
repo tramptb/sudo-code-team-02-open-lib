@@ -4,11 +4,11 @@
   --font-family: "Open Sans", sans-serif;
   --font-weight-h2: 500;
   --font-size-h2: 35px;
-  --font-size: 16px;
+  --font-size: 14px;
   --input-padding: 0.75em;
   --button-background: #0069d9;
   --button-color: #fff;
-  --border-radius: 5px;
+  --border-radius: 2px; 
   --border-color: #ced4da;
   --border-color-hover: #80bdff;
 }
@@ -16,7 +16,7 @@
 * {
   padding: 0;
   box-sizing: border-box;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 body {
@@ -27,7 +27,7 @@ body {
 }
 
 .container {
-  max-width: 500px;
+  width: 360px;
   margin: 50px auto;
   background-color: #ffffff;
   padding: 30px;
@@ -35,21 +35,17 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-form {
-  margin-bottom: 15px;
-}
-
 h2 {
   text-align: center;
   color: var(--primary-color);
-  margin-bottom: 20px;
 }
 
 label {
-  display: block;
-  font-size: 16px;
+  font-size: var(--font-size);
   font-weight: 400;
-  margin-bottom: 5px; 
+  margin-bottom: 5px;
+  padding-left: 5px;
+  cursor: pointer;
 }
 
 .spacer {
@@ -59,29 +55,32 @@ label {
 .form-control {
   display: block;
   width: 100%;
-  padding: var(--input-padding);
-  font-size: var(--font-size);
+  height: 40px;
+  padding: 10px;
+  font-size: 15px;
   font-family: var(--font-family);
   font-weight: 400;
   line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
   border: 1px solid var(--border-color);
 }
 
 .form-control:focus {
-  color: #495057;
-  background-color: #fff;
   border-color: var(--border-color-hover);
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
 .form-check-label {
-  display: block;
   font-size: var(--font-size);
   font-weight: 400;
   margin-bottom: 5px;
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+.form-check-input {
+  display: inline-block;  
+  cursor: pointer;
 }
 
 .term {
@@ -106,3 +105,4 @@ label {
 .btn:hover {
   background-color: #0056b3;
 }
+
