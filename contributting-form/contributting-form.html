@@ -33,8 +33,8 @@
 
       <div class="form-group">
         <label for="category">Category:</label>
-        <select class="form-control" id="category" name="category" required>
-          <option value="">Select Category</option>
+        <select name="category" class="form-control" id="category" name="category" required>
+          <option value="">-- Select Category --</option>
           <option value="Fiction">Fiction</option>
           <option value="Non-Fiction">Non-Fiction</option>
           <option value="Science">Science</option>
@@ -53,6 +53,7 @@
       </div>
 
       <div class="form-group">
+         
         <label for="description">Description:</label>
         <textarea rows="1" class="form-control" id="description" name="description" required></textarea>
       </div>
@@ -79,7 +80,7 @@
 
       <div class="form-group">
         <label for="agreement" class="form-check-label">
-          I agree to the 
+          I agree to the
           <a class="term" href="terms.html">Terms and Conditions</a>
           <input type="checkbox" class="form-check-input" id="agreement" name="agreement" required />
         </label>
