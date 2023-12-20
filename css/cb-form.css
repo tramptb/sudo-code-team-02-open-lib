@@ -27,6 +27,7 @@ body {
 }
 
 .container {
+  position: relative;
   width: 360px;
   margin: 50px auto;
   background-color: #ffffff;
@@ -110,3 +111,44 @@ label {
 .btn:hover {
   background-color: #0056b3;
 }
+
+.form-icon {
+  position: absolute;
+  padding: 10px;
+}
+
+.failure-icon,
+.error {
+  color: red;
+}
+
+.success-icon,
+.success {
+  color: green;
+}
+
+.error {
+  font-size: 14.5px;
+  margin-top: 5px;
+}
+
+.success {
+  font-size: 14.5px;
+  margin-top: 5px;
+}
+
+.success-icon,
+.failure-icon {
+  right: 0;
+  opacity: 0.5; 
+}
+
+.success-icon {
+  position: absolute;
+  right: 30px;
+  transform: translate(-60%, -60%);
+}
+
+
+
+
