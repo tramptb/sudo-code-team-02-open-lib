@@ -3,23 +3,27 @@ body {
     margin: 20px;
 }
 
-header {
+#rw-main-header {
     text-align: center;
     margin-bottom: 20px;
 }
 
-section {
+.rw-book-section{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
 }
 
-h2,
-h3,
-p {
-    margin-bottom: 10px;
+.rw-book-info {
+    display: block;
+    padding: 0;
+    margin-top: 20px;
+    width: 300px;     /* Set the width to 300 pixels */
+    height: auto;     /* Maintain the aspect ratio */
+    border: 0px solid #ccc;
 }
+
 
 article {
     flex: 1;
@@ -41,6 +45,14 @@ ul {
     border: 0px solid #ccc;
 }
 
+.rw-borrow-section {
+    display: block;
+    padding: 0;
+    margin-top: 20px;
+    width: 300px;     /* Set the width to 300 pixels */
+    height: auto;     /* Maintain the aspect ratio */
+    border: 0px solid #ccc;
+}
 
 
 img {
