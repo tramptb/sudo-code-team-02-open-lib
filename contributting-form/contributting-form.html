@@ -18,7 +18,7 @@
 
 <body>
   <div class="container">
-    <form id="contributeForm" method="POST" enctype="multipart/form-data">
+    <form id="contributeForm">
       <h2 class="heading">Contribute Book</h2>
       <div class="spacer"></div>
 
@@ -26,24 +26,12 @@
         <label for="title">Title:</label>
         <input type="text" class="form-control" id="title" name="title" placeholder="Enter title" />
 
-        <div class="validate-icon">
-          <i class="fas fa-exclamation-circle failure-icon"></i>
-          <i class="far fa-check-circle success-icon"></i>
-        </div>
-
         <div class="error"></div>
-
-        <span class="form-message"></span>
       </div>
 
       <div class="form-group">
         <label for="author">Author:</label>
         <input type="text" class="form-control" id="author" name="author" placeholder="Enter author" />
-
-        <div class="validate-icon">
-          <i class="fas fa-exclamation-circle failure-icon"></i>
-          <i class="far fa-check-circle success-icon"></i>
-        </div>
 
         <div class="error"></div>
 
@@ -69,10 +57,10 @@
           <option value="Other">Other</option>
         </select>
 
-        <div class="validate-icon">
+        <!-- <div class="validate-icon">
           <i class="fas fa-exclamation-circle failure-icon"></i>
           <i class="far fa-check-circle success-icon"></i>
-        </div>
+        </div>  -->
 
         <div class="error"></div>
       </div>
@@ -86,10 +74,11 @@
       <div class="form-group">
         <label for="bookFile">Book File:</label>
         <input type="file" class="form-control" id="bookFile" name="bookFile" />
-        <div class="validate-icon">
+
+        <!-- <div class="validate-icon">
           <i class="fas fa-exclamation-circle failure-icon"></i>
           <i class="far fa-check-circle success-icon"></i>
-        </div>
+        </div> -->
 
         <div class="error"></div>
       </div>
@@ -103,10 +92,11 @@
         <label for="contributorName">Contributor Name:</label>
         <input type="text" class="form-control" id="contributorName" name="contributorName" /
           placeholder="Enter contributor name">
-        <div class="validate-icon">
+
+        <!-- <div class="validate-icon">
           <i class="fas fa-exclamation-circle failure-icon"></i>
           <i class="far fa-check-circle success-icon"></i>
-        </div>
+        </div> -->
 
         <div class="error"></div>
       </div>
@@ -116,10 +106,10 @@
         <input type="email" class="form-control" id="contributorEmail" name="contributorEmail" /
           placeholder="Enter contributor email">
 
-        <div class="validate-icon">
+        <!-- <div class="validate-icon">
           <i class="fas fa-exclamation-circle failure-icon"></i>
           <i class="far fa-check-circle success-icon"></i>
-        </div>
+        </div> -->
 
         <div class="error"></div>
       </div>
@@ -134,10 +124,6 @@
 
       <button type="submit" class="btn btn-primary">Submit</button>
 
-      <!-- Add this div for success message -->
-      <div id="successMessage" class="alert alert-success" style="display: none;">
-        Contribute book successful!
-      </div>
 
     </form>
     <script src="../javascript/cb-form.js"></script>
