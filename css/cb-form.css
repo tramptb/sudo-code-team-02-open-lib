@@ -8,7 +8,7 @@
   --input-padding: 0.75em;
   --button-background: #0069d9;
   --button-color: #fff;
-  --border-radius: 2px;
+  --border-radius: 5px;
   --border-color: #ced4da;
   --border-color-hover: #80bdff;
 }
@@ -68,6 +68,7 @@ label {
   font-weight: 400;
   line-height: 1.5;
   border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
 }
 
 .form-control:focus {
@@ -113,40 +114,21 @@ label {
   background-color: #0056b3;
 }
 
-.validate-icon {
-  position: relative;
-  padding: 10px;
+.form-group, input:focus {
+  
+  outline: 0;
 }
 
-.failure-icon,
-.error {
-  color: red;
+.form-group .success {
+  border-color: #09c372;
 }
 
-.success-icon,
-.success {
-  color: green;
+.form-group .error input {
+  border-color: #ff3860;
 }
 
-.error {
-  font-size: 14.5px;
-  margin-top: 5px;
+.form-group .error {
+  color: #ff3860;
+  font-size: 12px;
+  height: 13px;
 }
-
-.success {
-  font-size: 14.5px;
-  margin-top: 5px;
-}
-
-.success-icon,
-.failure-icon {
-  display: none;
-  position: absolute;
-  display: inline-block;
-  top: calc(50% - 10px);
-  padding: 10px;
-  right: 0px;
-}
-
-
-
