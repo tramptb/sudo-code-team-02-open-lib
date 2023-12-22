@@ -28,10 +28,10 @@ body {
 
 .container {
   position: relative;
-  width: 360px;
+  width: 350px;
   margin: 50px auto;
   background-color: #ffffff;
-  padding: 40px;
+  padding: 30px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -129,6 +129,6 @@ label {
 
 .form-group .error {
   color: #ff3860;
-  font-size: 12px;
+  font-size: 13px;
   height: 13px;
 }
