@@ -26,19 +26,64 @@ article {
     margin-right: 20px;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #ccc;
-    /* Optional: Add a border to the book cover */
-}
 
 ul {
     list-style: none;
     padding: 0;
 }
 
+.rw-book-info {
+    display: block;
+    padding: 0;
+    margin-top: 20px;
+    width: 300px;     /* Set the width to 300 pixels */
+    height: auto;     /* Maintain the aspect ratio */
+    border: 0px solid #ccc;
+}
+
+
+
+img {
+    display: block;
+    padding: 0;
+    margin-top: 20px;
+    width: 400px;     /* Set the width to 300 pixels */
+    height: auto;     /* Maintain the aspect ratio */
+    border: 1px solid #ccc;
+    overflow: hidden;
+
+}
+
 footer {
     margin-top: 20px;
     text-align: center;
+}
+
+
+/* Basic styling for the book cover section */
+.rw-book-cover {
+    margin-bottom: 20px;
+}
+
+/* Styling for individual book covers */
+.rw-book-cover img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    /* Optional: Add a border to the image */
+}
+
+/* Styling for the slider container */
+.slider-cover {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 10px; /* Adjust the gap between book covers */
+    padding: 10px; /* Optional: Add padding to the slider container */
+    max-width: 400px;
+}
+
+/* Optional: Add hover effect to book covers */
+.rw-book-cover img:hover {
+    border-color: #007BFF; /* Change border color on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
 }
