@@ -102,23 +102,9 @@ body {
   font-size: 16px;
 }
 
-button {
-  padding: 10px;
-  border: 1px solid #007bff; /* Adjust the border color as needed */
-  border-radius: 0 5px 5px 0;
-  background-color: #007bff; /* Adjust the background color as needed */
-  color: #fff; /* Adjust the text color as needed */
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
-
-button:hover {
-  background-color: #0056b3; /* Adjust the hover background color as needed */
-}
-
 /* User section styles */
 .rw-user {
-  display: inline-flex;
+  display: inline-block;
   margin-right: 30px;
   padding: 5px;
   border: 1px solid #007bff; /* Adjust the border color as needed */
@@ -138,6 +124,7 @@ button:hover {
 }
 
 .rw-basket {
+  display: inline-block;
   margin-right: 30px;
   padding: 5px;
   border: 1px solid #007bff; /* Adjust the border color as needed */
@@ -173,13 +160,12 @@ button:hover {
 }
 
 button {
-  padding: 10px;
-  border: 1px solid #007bff; /* Adjust the border color as needed */
-  border-radius: 0 5px 5px 0;
+  padding: 5px;
+  border: 2px solid #007bff; /* Adjust the border color as needed */
+  border-radius: 5px;
   background-color: #007bff; /* Adjust the background color as needed */
   color: #fff; /* Adjust the text color as needed */
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
 }
 
 .rw-user {
@@ -374,7 +360,7 @@ button {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .rw-borrow-info {
