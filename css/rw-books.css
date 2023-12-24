@@ -6,346 +6,430 @@ h3,
 p,
 ul,
 li {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
 }
 
 /* Main container */
 .rw-container {
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px; /* Adjust the maximum width as needed */
-    margin: 0 auto; /* Center the container */
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the container */
 }
 
 /* Header styles */
 #rw-main-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
 }
 
 .rw-header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .rw-logo img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .rw-search {
-    display: flex;
-    width: 400px; /* Adjust the width of the flex container as needed */
+  display: flex;
+  width: 400px; /* Adjust the width of the flex container as needed */
 }
 
 .rw-search input {
-    flex: 1; /* Take up all available space */
-    padding: 8px;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
+  flex: 1; /* Take up all available space */
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
 }
 
 button {
-    padding: 10px;
-    border: 1px solid #007bff; /* Adjust the border color as needed */
-    border-radius: 0 5px 5px 0;
-    background-color: #007bff; /* Adjust the background color as needed */
-    color: #fff; /* Adjust the text color as needed */
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+  padding: 10px;
+  border: 1px solid #007bff; /* Adjust the border color as needed */
+  border-radius: 0 5px 5px 0;
+  background-color: #007bff; /* Adjust the background color as needed */
+  color: #fff; /* Adjust the text color as needed */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
 button:hover {
-    background-color: #0056b3; /* Adjust the hover background color as needed */
+  background-color: #0056b3; /* Adjust the hover background color as needed */
 }
 
 /* User section styles */
 .rw-user-section {
-    display: flex;
-    align-items: center;
-
+  display: flex;
+  align-items: center;
 }
-
 
 /* Breadcrumb styles */
 .rw-breadcrumb {
-    margin-top: 10px;
-    margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .rw-breadcrumb a {
-    text-decoration: none;
-    color: #333;
+  text-decoration: none;
+  color: #333;
 }
 
 .rw-search {
-    display: flex;
-    width: 300px; /* Adjust the width as needed */
+  display: flex;
+  width: 300px; /* Adjust the width as needed */
 }
 
 .rw-search input {
-    padding: 8px;
-    border: none;
-    border-radius: 4px;
-    
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
 }
-
 
 button {
-    padding: 10px;
-    border: 1px solid #007bff; /* Adjust the border color as needed */
-    border-radius: 0 5px 5px 0;
-    background-color: #007bff; /* Adjust the background color as needed */
-    color: #fff; /* Adjust the text color as needed */
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+  padding: 10px;
+  border: 1px solid #007bff; /* Adjust the border color as needed */
+  border-radius: 0 5px 5px 0;
+  background-color: #007bff; /* Adjust the background color as needed */
+  color: #fff; /* Adjust the text color as needed */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
-
 .rw-user {
-    margin-right: 30px;
-    padding: 5px;
-    border: 1px solid #007bff; /* Adjust the border color as needed */
-    border-radius: 5px;
-    background-color: #007bff; /* Adjust the background color as needed */
-    color: #fff; /* Adjust the text color as needed */
+  margin-right: 30px;
+  padding: 5px;
+  border: 1px solid #007bff; /* Adjust the border color as needed */
+  border-radius: 5px;
+  background-color: #007bff; /* Adjust the background color as needed */
+  color: #fff; /* Adjust the text color as needed */
 }
 
 .rw-user:hover {
-    background-color: #0056b3; /* Adjust the hover background color as needed */
+  background-color: #0056b3; /* Adjust the hover background color as needed */
 }
 
 .rw-basket {
-    margin-right: 30px;
-    padding: 5px;
-    border: 1px solid #007bff; /* Adjust the border color as needed */
-    border-radius: 5px;
-    background-color: #007bff; /* Adjust the background color as needed */
-    color: #fff; /* Adjust the text color as needed */
+  margin-right: 30px;
+  padding: 5px;
+  border: 1px solid #007bff; /* Adjust the border color as needed */
+  border-radius: 5px;
+  background-color: #007bff; /* Adjust the background color as needed */
+  color: #fff; /* Adjust the text color as needed */
 }
 
 .rw-basket:hover {
-    background-color: #0056b3; /* Adjust the hover background color as needed */
+  background-color: #0056b3; /* Adjust the hover background color as needed */
 }
-
 
 /* Breadcrumb styles */
 .rw-breadcrumb {
-    margin-top: 10px;
-    margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .rw-breadcrumb a {
-    text-decoration: none;
-    color: #333;
+  text-decoration: none;
+  color: #333;
 }
 
 .rw-breadcrumb i {
-    margin: 0 5px;
+  margin: 0 5px;
 }
 
 /* Book section styles */
 .rw-book-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .rw-book-cover {
-    flex: 1;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    background-color: #fff;
-    border-radius: 4px;
+  flex: 1;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 4px;
 }
 
 .slider-cover {
-    display: flex;
-    overflow-x: auto;
-    overflow-y: hidden;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .slider-cover img {
-    max-width: 100%;
-    height: auto;
-    margin-right: 10px;
-
+  max-width: 100%;
+  height: auto;
+  margin-right: 10px;
 }
 
 .rw-book-info {
-    flex: 1;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 4px;
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
 }
 
 .rw-book-info h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .rw-book-info p {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .rw-book-info h3 {
-    font-size: 18px;
-    margin-top: 15px;
-    margin-bottom: 5px;
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 
 .rw-book-details {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .rw-book-details p {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 .rw-book-details p strong {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .rw-rating-point span {
-    font-weight: bold;
-    margin-right: 5px;
+  font-weight: bold;
+  margin-right: 5px;
 }
 
 .rw-book-details span {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
-.rw-book-details, .rw-book-description {
-    margin-bottom: 10px;
+.rw-book-details,
+.rw-book-description {
+  margin-bottom: 10px;
 }
 
 .rw-rating-point i {
-    color: #f1c40f;
+  color: #f1c40f;
 }
 
 .rw-book-description {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .rw-book-description p {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .rw-book-quantity-btn {
-    display: inline-block;
-    margin-bottom: 15px;
-    font-size: 10px;
+  display: inline-block;
+  margin-bottom: 15px;
+  font-size: 10px;
 }
 
 .rw-book-cart-btn {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px 20px;
-    border: 1px solid #007bff; /* Adjust the border color as needed */
-    border-radius: 5px;
-    background-color: #007bff; /* Adjust the background color as needed */
-    color: #fff; /* Adjust the text color as needed */
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease-in-out;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border: 1px solid #007bff; /* Adjust the border color as needed */
+  border-radius: 5px;
+  background-color: #007bff; /* Adjust the background color as needed */
+  color: #fff; /* Adjust the text color as needed */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
 }
 
-
 .rw-book-cart-btn:hover {
-    background-color: #0056b3; /* Adjust the hover background color as needed */
+  background-color: #0056b3; /* Adjust the hover background color as needed */
 }
 
 /* Borrow section styles */
 .rw-borrow-section {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 4px;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.rw-borrow {
+  display: block;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 4px;
 }
 
 .rw-borrow-section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.rw-borrow-overview {
+  margin-bottom: 5px;
+}
+
+.rw-borrow-overview i {
+  color: #f1c40f;
+  margin-right: 5px;
+}
+
+.rw-borrow-overview-rating span strong {
+  font-weight: bold;
 }
 
 .rw-borrow-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 20px;
 }
 
 .rw-borrow-info {
-    flex: 1;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    background-color: #fff;
-    border-radius: 4px;
+  flex: 1;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 4px;
 }
 
 .rw-borrow-ratting i {
-    color: #f1c40f;
+  color: #f1c40f;
 }
 
 .rw-borrow-ratting span {
-    font-weight: bold;
-    margin-right: 5px;
+  font-weight: bold;
+  margin-right: 5px;
 }
 
 .rw-borrow-ratting {
-    margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
-.rw-borrowed  i {
-   color: #2ecc71;
+.rw-borrow {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 4px;
 }
 
+.rw-borrowed i {
+  color: #2ecc71;
+}
+
+.rw-borrow-user {
+  margin-bottom: 5px;
+}
+
+.rw-borrow-info i {
+  margin-right: 5px;
+}
 
 .rw-borrow-img {
-    display: flex;
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    cursor: pointer;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.rw-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  list-style: none;
+  padding: 0;
+}
+
+.rw-pagination i {
+  font-size: 18px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.rw-pagination a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 5px;
+  color: #3498db;
+  width: 30px;
+  height: 30px;
+  line-height: 24px;
+  border: 1px solid #3498db;
+  border-radius: 50%;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.rw-pagination a:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.rw-pagination span {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  margin: 0 2px;
+  color: #666;
+}
+
+/* .rw-pagination a,
+.rw-pagination span {
+    
+} */
+
+/* Style for active page link */
+.rw-pagination a[href="active"] {
+  background-color: #3498db;
+  color: #fff;
 }
 
 /* Footer styles */
 .rw-footer {
-    margin-top: 20px;
-    padding: 10px 0;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
+  margin-top: 20px;
+  padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
 }
-
 
 /* Responsive Styles */
 @media only screen and (max-width: 768px) {
-    .rw-search {
-        width: 100%;
-    }
+  .rw-search {
+    width: 100%;
+  }
 
-    .rw-book-cover {
-        flex: 100%;
-        margin-right: 0;
-    }
+  .rw-book-cover {
+    flex: 100%;
+    margin-right: 0;
+  }
 
-    .rw-book-info {
-        flex: 100%;
-        margin-right: 0;
-    }
+  .rw-book-info {
+    flex: 100%;
+    margin-right: 0;
+  }
 }
