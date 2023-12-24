@@ -251,6 +251,7 @@ button {
 
 .rw-book-cart-btn {
     display: inline-block;
+    width: 100%;
     margin-bottom: 10px;
     padding: 10px 20px;
     border: 1px solid #007bff; /* Adjust the border color as needed */
@@ -258,8 +259,10 @@ button {
     background-color: #007bff; /* Adjust the background color as needed */
     color: #fff; /* Adjust the text color as needed */
     cursor: pointer;
+    font-size: 16px;
     transition: background-color 0.3s ease-in-out;
 }
+
 
 .rw-book-cart-btn:hover {
     background-color: #0056b3; /* Adjust the hover background color as needed */
@@ -278,22 +281,46 @@ button {
     margin-bottom: 10px;
 }
 
-.rw-borrow-section p {
+.rw-borrow-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.rw-borrow-info {
+    flex: 1;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.rw-borrow-ratting i {
+    color: #f1c40f;
+}
+
+.rw-borrow-ratting span {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.rw-borrow-ratting {
     margin-bottom: 10px;
 }
 
-.rw-borrow-section ul {
-    list-style: none;
-    padding: 0;
+.rw-borrowed  i {
+   color: #2ecc71;
 }
 
-.rw-borrow-section li {
-    margin-bottom: 5px;
-}
 
-.rw-borrow-section a {
-    text-decoration: none;
-    color: #007bff;
+.rw-borrow-img {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
 }
 
 /* Footer styles */
@@ -303,4 +330,22 @@ button {
     background-color: #333;
     color: #fff;
     text-align: center;
+}
+
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .rw-search {
+        width: 100%;
+    }
+
+    .rw-book-cover {
+        flex: 100%;
+        margin-right: 0;
+    }
+
+    .rw-book-info {
+        flex: 100%;
+        margin-right: 0;
+    }
 }
