@@ -69,10 +69,11 @@
             <article class="rw-book-info">
                 <div class="rw-book-details">
                     <h2>The Psychology of Money</h2>
-                    <p>Author: Morgan Housel</p>
-                    <p>Genre: Comic</p>
+                    <p><strong>Author:</strong> Morgan Housel</p>
+                    <p><strong>Genre:</strong> Comic</p>
                     <div class="rw-rating-point">
                         <span>Rating: </span>
+                        <span>4.5</span>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -83,22 +84,48 @@
 
                 <div class="rw-book-description">
                     <h3>Book description</h3>
-                    <p>Money is everywhere, it affects us all, and confuses most of us. People think about it in
+                    <p>
+                        Money is everywhere, it affects us all, and confuses most of us. People think about it in
                         slightly different ways. It offers lessons that can be applied to many areas of life, such as
                         risk, confidence, and happiness. Few topics provide a more powerful lens into why people behave
                         the way they do than money. It's one of the most epic shows in the world.
+                    </p>
 
+                    <p>
                         We rarely find ourselves in a situation of being in debt? Know how to save for times of
                         hardship? Ready for retirement? Are there more practical views on the relationship between money
                         and our happiness?
+                    </p>
 
+                    <p>
                         We all do crazy things with money, because we're all new to the game, and what seems crazy to
                         you might make sense to me. But no one is crazy – we all make decisions based on our own unique
                         experiences that seem reasonable to us at any given time.
                     </p>
                 </div>
+
+                <div class="rw-book-cart">
+                    <div class="rw-book-quantity">
+                       <span><strong>Quantity</strong></s>
+                        <button class="rw-book-quantity-btn" type="button" name="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                            title="Decrease Quantity">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                        <input class="rw-book-quantity-input" type="number" name="name" id="quantity" value="1" min="1"
+                            max="10" placeholder="Enter quantity">
+                        <button class="rw-book-quantity-btn" type="button" name="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                            title="Increase Quantity">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <button class="rw-book-cart-btn" type="button" name="button">Add to cart</button>
+                </div>
             </article>
         </section>
+
+
 
         <section class="rw-borrow-section">
             <h2>Borrow Now</h2>
