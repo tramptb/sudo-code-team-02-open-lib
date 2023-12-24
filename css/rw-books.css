@@ -55,6 +55,7 @@ body {
     border-radius: 4px;
     font-size: 16px;
 }
+
 button {
     padding: 10px;
     border: 1px solid #007bff; /* Adjust the border color as needed */
@@ -158,16 +159,29 @@ button {
 .rw-book-section {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .rw-book-cover {
     flex: 1;
     margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.slider-cover {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .slider-cover img {
     max-width: 100%;
     height: auto;
+    margin-right: 10px;
+
 }
 
 .rw-book-info {
@@ -196,8 +210,21 @@ button {
     margin-bottom: 10px;
 }
 
+.rw-book-details p {
+    margin: 5px 0;
+}
+
+.rw-book-details p strong {
+    font-weight: bold;
+}
+
+.rw-rating-point span {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
 .rw-book-details span {
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .rw-book-details, .rw-book-description {
@@ -216,8 +243,27 @@ button {
     margin-bottom: 5px;
 }
 
+.rw-book-quantity-btn {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 10px;
+}
 
+.rw-book-cart-btn {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border: 1px solid #007bff; /* Adjust the border color as needed */
+    border-radius: 5px;
+    background-color: #007bff; /* Adjust the background color as needed */
+    color: #fff; /* Adjust the text color as needed */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
 
+.rw-book-cart-btn:hover {
+    background-color: #0056b3; /* Adjust the hover background color as needed */
+}
 
 /* Borrow section styles */
 .rw-borrow-section {
