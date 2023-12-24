@@ -4,13 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <!-- <script type="text/javascript" src="./javascript/rw-book.js"></script> -->
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Include Slick carousel CSS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <link rel="stylesheet" href="../css/rw-books.css">
 
     <title>Reviewing Books</title>
 </head>
@@ -39,9 +45,9 @@
 
         <div class="rw-breadcrumb">
             <a href="index.html">Home</a>
-            <i class="fas fa-chevron-right"></i>
+            <i class="fa-solid fa-chevron-right fa-sm"></i>
             <a href="rw-books.html">Books</a>
-            <i class="fas fa-chevron-right"></i>
+            <i class="fa-solid fa-chevron-right fa-sm"></i>
             <span>Reviewing Books</span>
         </div>
 
@@ -50,29 +56,24 @@
                 <div class="slider-cover">
                     <img src="https://salt.tikicdn.com/cache/750x750/ts/product/83/23/b7/14a42ae4f66c9b8b298aaef4b9671442.jpg.webp"
                         alt="Book Cover 1">
-                    <!-- Add more book covers as needed -->
-                </div>
-            </article>
-
-            <article class="rw-book-cover">
-                <div class="slider-cover">
-                    <img src="https://salt.tikicdn.com/cache/750x750/ts/product/83/23/b7/14a42ae4f66c9b8b298aaef4b9671442.jpg.webp"
-                        alt="Book Cover 1">
                     <img src="https://salt.tikicdn.com/cache/750x750/ts/product/d8/79/d9/8c3f38ce32884e18b83d73260173b16c.jpg.webp"
                         alt="Book Cover 2">
-                    <!-- Add more book covers as needed -->
                 </div>
             </article>
 
             <article class="rw-book-info">
-                <h2>Book Title</h2>
-                <p>Author: Author Name</p>
-                <p>Genre: Comic</p>
-                <p>Rating: 4.5/5</p>
+                <div class="rw-book-details">
+                    <h2>The Psychology of Money</h2>
+                    <p>Author: Morgan Housel</p>
+                    <p>Genre: Comic</p>
+                    <p>Rating: 4.5/5</p>
+                </div>
 
-                <h3>Book description</h3>
-                <p>This is a brief summary and review of the book. You can include your thoughts, opinions, and key
-                    takeaways from the book here.</p>
+                <div class="rw-book-description">
+                    <h3>Book description</h3>
+                    <p>This is a brief summary and review of the book. You can include your thoughts, opinions, and key
+                        takeaways from the book here.</p>
+                </div>
             </article>
         </section>
 
@@ -93,14 +94,16 @@
     <script>
         $(document).ready(function () {
             $('.slider-cover').slick({
-                dots: true,
-                infinite: true,
                 vertical: true,
+                verticalSwiping: true,
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                speed: 300,
                 autoplay: true,
                 autoplaySpeed: 2000,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                pauseOnFocus: false,
             });
         });
     </script>
@@ -108,7 +111,6 @@
     <footer class="rw-footer">
         <p>&copy; 2023 Your Library Name. All rights reserved.</p>
     </footer>
-
 </body>
 
 </html>
