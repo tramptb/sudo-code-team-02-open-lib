@@ -19,9 +19,10 @@ body {
 
 /* Main container */
 .rw-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the container */
 }
 
 /* Header styles */
@@ -43,25 +44,100 @@ body {
 }
 
 .rw-search {
-    position: relative;
+    display: flex;
+    width: 400px; /* Adjust the width of the flex container as needed */
+}
+
+.rw-search input {
+    flex: 1; /* Take up all available space */
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+button {
+    padding: 10px;
+    border: 1px solid #007bff; /* Adjust the border color as needed */
+    border-radius: 0 5px 5px 0;
+    background-color: #007bff; /* Adjust the background color as needed */
+    color: #fff; /* Adjust the text color as needed */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3; /* Adjust the hover background color as needed */
+}
+
+/* User section styles */
+.rw-user-section {
+    display: flex;
+    align-items: center;
+
+}
+
+
+/* Breadcrumb styles */
+.rw-breadcrumb {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.rw-breadcrumb a {
+    text-decoration: none;
+    color: #333;
+}
+
+.rw-search {
+    display: flex;
+    width: 300px; /* Adjust the width as needed */
 }
 
 .rw-search input {
     padding: 8px;
     border: none;
     border-radius: 4px;
+    
 }
 
-.rw-search button {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
+
+button {
+    padding: 10px;
+    border: 1px solid #007bff; /* Adjust the border color as needed */
+    border-radius: 0 5px 5px 0;
+    background-color: #007bff; /* Adjust the background color as needed */
+    color: #fff; /* Adjust the text color as needed */
     cursor: pointer;
-    color: #fff;
+    transition: background-color 0.3s ease-in-out;
 }
+
+
+.rw-user {
+    margin-right: 30px;
+    padding: 5px;
+    border: 1px solid #007bff; /* Adjust the border color as needed */
+    border-radius: 5px;
+    background-color: #007bff; /* Adjust the background color as needed */
+    color: #fff; /* Adjust the text color as needed */
+}
+
+.rw-user:hover {
+    background-color: #0056b3; /* Adjust the hover background color as needed */
+}
+
+.rw-basket {
+    margin-right: 30px;
+    padding: 5px;
+    border: 1px solid #007bff; /* Adjust the border color as needed */
+    border-radius: 5px;
+    background-color: #007bff; /* Adjust the background color as needed */
+    color: #fff; /* Adjust the text color as needed */
+}
+
+.rw-basket:hover {
+    background-color: #0056b3; /* Adjust the hover background color as needed */
+}
+
 
 /* Breadcrumb styles */
 .rw-breadcrumb {
@@ -110,6 +186,35 @@ body {
     margin-bottom: 5px;
 }
 
+.rw-book-info h3 {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.rw-book-details {
+    margin-bottom: 10px;
+}
+
+.rw-book-details span {
+    margin-right: 10px;
+}
+
+.rw-book-details, .rw-book-description {
+    margin-bottom: 10px;
+}
+
+.rw-rating-point i {
+    color: #f1c40f;
+}
+
+.rw-book-description {
+    font-size: 16px;
+}
+
+.rw-book-description p {
+    margin-bottom: 5px;
+}
 
 
 
