@@ -23,6 +23,12 @@ body {
   align-items: center;
   max-width: 1200px; /* Adjust the maximum width as needed */
   margin: 0 auto; /* Center the container */
+
+  padding: 0 20px;
+
+  margin-left: auto;
+
+  margin-right: auto;
 }
 
 /* Header styles */
@@ -35,8 +41,29 @@ body {
 .rw-header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1200px;
 }
+/*dd*/
+.rw-logo {
+  flex: 1;
+  margin-right: 30px;
+}
+
+.rw-search {
+  flex: 5;
+  margin-right: 30px;
+}
+
+.rw-user {
+  flex: 1;
+}
+
+.rw-basket {
+  flex: 1;
+}
+/*dd*/
 
 .rw-logo img {
   max-width: 100%;
@@ -45,7 +72,26 @@ body {
 
 .rw-search {
   display: flex;
-  width: 400px; /* Adjust the width of the flex container as needed */
+  align-items: center;
+  width: 70%; /* Adjust the width as needed */
+}
+
+.rw-search input[type="text"] {
+  flex: 1; /* Take up all available space */
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  width: 100%; /* Make the input field 100% wide */
+}
+
+.rw-search button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin-left: 5px;
+  cursor: pointer;
+  padding: 8px 12px;
 }
 
 .rw-search input {
@@ -71,9 +117,37 @@ button:hover {
 }
 
 /* User section styles */
-.rw-user-section {
-  display: flex;
+.rw-user {
+  display: inline-flex;
+  margin-right: 30px;
+  padding: 5px;
+  border: 1px solid #007bff; /* Adjust the border color as needed */
+  border-radius: 5px;
+  background-color: #007bff; /* Adjust the background color as needed */
+  color: #fff; /* Adjust the text color as needed */
   align-items: center;
+  justify-content: center;
+}
+
+.rw-user i {
+  margin-right: 10px;
+}
+
+.rw-user:hover {
+  background-color: #0056b3; /* Adjust the hover background color as needed */
+}
+
+.rw-basket {
+  margin-right: 30px;
+  padding: 5px;
+  border: 1px solid #007bff; /* Adjust the border color as needed */
+  border-radius: 5px;
+  background-color: #007bff; /* Adjust the background color as needed */
+  color: #fff; /* Adjust the text color as needed */
+}
+
+.rw-basket:hover {
+  background-color: #0056b3; /* Adjust the hover background color as needed */
 }
 
 /* Breadcrumb styles */
@@ -334,9 +408,24 @@ button {
 .rw-borrowed i {
   color: #2ecc71;
 }
+.rw-borrowed span {
+  font-size: 14px;
+  margin-right: 5px;
+}
 
 .rw-borrow-user {
   margin-bottom: 5px;
+}
+
+.rw-borrow-user i {
+  margin-right: 5px;
+  color: #3498db;
+}
+
+.rw-borrow-user span {
+  font-size: 14px;
+  margin-right: 5px;
+  color: #3498db;
 }
 
 .rw-borrow-info i {
@@ -351,6 +440,11 @@ button {
   margin-top: 10px;
   margin-bottom: 20px;
   cursor: pointer;
+}
+
+hr {
+  margin: 10px 0;
+  opacity: 0.3;
 }
 
 .rw-pagination {
