@@ -129,6 +129,24 @@
 
         <section class="rw-borrow-section">
             <h2>Reader reviews</h2>
+
+            <div class="rw-borrow-overview">
+                <div class="rw-borrow-overview-rating">
+                    <span>Rating: </span>
+                    <span>4.5</span>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <div class="rw-borrow-overview-num">
+                    <span>Number of reviews: </span>
+                    <span>3</span>
+                </div>
+            </div>
+
             <div class="rw-borrow-container">
                 <div class="rw-borrow">
                     <div class="rw-borrow-info">
@@ -143,8 +161,8 @@
                         </div>
 
                         <div class="rw-borrowed">
-                            <span>Borrowed</span>
                             <i class="fa-solid fa-circle-check"></i>
+                            <span>Borrowed</span>
                         </div>
 
                         <div class="rw-borrow-user">
@@ -188,8 +206,8 @@
                         </div>
 
                         <div class="rw-borrowed">
-                            <span>Borrowed</span>
                             <i class="fa-solid fa-circle-check"></i>
+                            <span>Borrowed</span>
                         </div>
 
                         <div class="rw-borrow-user">
@@ -210,6 +228,14 @@
                             behave the way they do than money. It's one of the most epic shows in the world.
                         </p>
                     </div>
+
+                    <div class="rw-borrow-img">
+                        <img src="https://salt.tikicdn.com/cache/750x750/ts/review/60/a5/fb/03432ae60100b139e5b93c21a72f0e04.jpg.webp"
+                            alt="Book Cover 1">
+
+                        <img src="https://salt.tikicdn.com/cache/750x750/ts/review/1b/68/cb/32ede75354bddc92ddccbef5fe260c62.jpg.webp"
+                            alt="Book Cover 2">
+                    </div>
                 </div>
 
                 <div class="rw-borrow">
@@ -225,8 +251,8 @@
                         </div>
 
                         <div class="rw-borrowed">
-                            <span>Borrowed</span>
                             <i class="fa-solid fa-circle-check"></i>
+                            <span>Borrowed</span>
                         </div>
 
                         <div class="rw-borrow-user">
@@ -246,29 +272,51 @@
                             behave the way they do than money. It's one of the most epic shows in the world.
                         </p>
                     </div>
+
+                    <div class="rw-borrow-img">
+                        <img src="https://salt.tikicdn.com/cache/750x750/ts/review/72/56/ca/450844abc77159a0ea8a4aab089a5e53.jpg.webp"
+                            alt="Book Cover 1">
+
+                        <img src="https://salt.tikicdn.com/cache/750x750/ts/review/22/2a/04/2c8ad8519104d80353b6421078029446.jpg.webp"
+                            alt="Book Cover 2">
+                    </div>
                 </div>
             </div>
+
+            <div class="rw-pagination">
+                <i class="fa-solid fa-chevron-left"></i>
+                <a href="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a class="#" href="#">4</a>
+                <a href="#">5</a>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
         </section>
 
-    </div>
 
-    <!-- Write script to make the book cover images slide vertically -->
-    <script>
-        $(document).ready(function () {
-            $('.slider-cover').slick({
-                vertical: true,
-                verticalSwiping: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                arrows: false,
-                dots: false,
-                pauseOnHover: false,
-                pauseOnFocus: false,
+
+
+        <!-- Write script to make the book cover images slide vertically -->
+        <script>
+            $(document).ready(function () {
+                $('.slider-cover').slick({
+                    vertical: true,
+                    verticalSwiping: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    arrows: false,
+                    dots: false,
+                    pauseOnHover: false,
+                    pauseOnFocus: false,
+                });
             });
-        });
-    </script>
+        </script>
+
+    </div>
 
     <footer class="rw-footer">
         <p>&copy; 2023 Your Library Name. All rights reserved.</p>
