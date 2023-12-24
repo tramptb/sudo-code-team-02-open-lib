@@ -106,19 +106,19 @@
 
                 <div class="rw-book-cart">
                     <div class="rw-book-quantity">
-                       <span><strong>Quantity</strong></s>
-                        <button class="rw-book-quantity-btn" type="button" name="button"
-                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                            title="Decrease Quantity">
-                            <i class="fas fa-minus"></i>
-                        </button>
-                        <input class="rw-book-quantity-input" type="number" name="name" id="quantity" value="1" min="1"
-                            max="10" placeholder="Enter quantity">
-                        <button class="rw-book-quantity-btn" type="button" name="button"
-                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                            title="Increase Quantity">
-                            <i class="fas fa-plus"></i>
-                        </button>
+                        <span><strong>Quantity</strong></s>
+                            <button class="rw-book-quantity-btn" type="button" name="button"
+                                onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                title="Decrease Quantity">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <input class="rw-book-quantity-input" type="number" name="name" id="quantity" value="1"
+                                min="1" max="10" placeholder="Enter quantity">
+                            <button class="rw-book-quantity-btn" type="button" name="button"
+                                onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                title="Increase Quantity">
+                                <i class="fas fa-plus"></i>
+                            </button>
                     </div>
                     <button class="rw-book-cart-btn" type="button" name="button">Add to cart</button>
                 </div>
@@ -128,14 +128,126 @@
 
 
         <section class="rw-borrow-section">
-            <h2>Borrow Now</h2>
-            <p>If you enjoyed the review and would like to purchase the book, you can find it at the following
-                retailers:</p>
-            <ul>
-                <li><a href="https://example.com/bookstore1" target="_blank">Bookstore 1</a></li>
-                <li><a href="https://example.com/bookstore2" target="_blank">Bookstore 2</a></li>
-                <!-- Add more bookstore links as needed -->
-            </ul>
+            <h2>Reader reviews</h2>
+            <div class="rw-borrow-container">
+                <div class="rw-borrow">
+                    <div class="rw-borrow-info">
+
+                        <div class="rw-borrow-ratting">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4.5</span>
+                        </div>
+
+                        <div class="rw-borrowed">
+                            <span>Borrowed</span>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+
+                        <div class="rw-borrow-user">
+                            <i class="fas fa-user"></i>
+                            <span>User Name</span>
+                        </div>
+                        <div class="rw-borrow-date">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>20/10/2021</span>
+                        </div>
+                    </div>
+                    <div class="rw-borrow-content">
+                        <p>
+                            Money is everywhere, it affects us all, and confuses most of us. People think about it in
+                            slightly different ways. It offers lessons that can be applied to many areas of life, such
+                            as risk, confidence, and happiness. Few topics provide a more powerful lens into why people
+                            behave the way they do than money. It's one of the most epic shows in the world.
+                        </p>
+
+                    </div>
+
+                    <div class="rw-borrow-img">
+                        <img src="https://salt.tikicdn.com/cache/750x750/ts/review/4d/66/1a/31de6b63e64710dc7f3cc55213793208.jpg.webp"
+                            alt="Book Cover 1">
+
+                        <img src="https://salt.tikicdn.com/cache/750x750/ts/review/1a/2e/10/3cb42d7f1545e58ffca256a7327efeae.jpg.webp"
+                            alt="Book Cover 2">
+                    </div>
+                </div>
+
+                <div class="rw-borrow">
+                    <div class="rw-borrow-info">
+
+                        <div class="rw-borrow-ratting">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4.5</span>
+                        </div>
+
+                        <div class="rw-borrowed">
+                            <span>Borrowed</span>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+
+                        <div class="rw-borrow-user">
+                            <i class="fas fa-user"></i>
+                            <span>User Name</span>
+                        </div>
+
+                        <div class="rw-borrow-date">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>20/10/2021</span>
+                        </div>
+                    </div>
+                    <div class="rw-borrow-content">
+                        <p>
+                            Money is everywhere, it affects us all, and confuses most of us. People think about it in
+                            slightly different ways. It offers lessons that can be applied to many areas of life, such
+                            as risk, confidence, and happiness. Few topics provide a more powerful lens into why people
+                            behave the way they do than money. It's one of the most epic shows in the world.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rw-borrow">
+                    <div class="rw-borrow-info">
+
+                        <div class="rw-borrow-ratting">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4.5</span>
+                        </div>
+
+                        <div class="rw-borrowed">
+                            <span>Borrowed</span>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+
+                        <div class="rw-borrow-user">
+                            <i class="fas fa-user"></i>
+                            <span>User Name</span>
+                        </div>
+                        <div class="rw-borrow-date">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>20 / 10 / 2021</span>
+                        </div>
+                    </div>
+                    <div class="rw-borrow-content">
+                        <p>
+                            Money is everywhere, it affects us all, and confuses most of us. People think about it in
+                            slightly different ways. It offers lessons that can be applied to many areas of life, such
+                            as risk, confidence, and happiness. Few topics provide a more powerful lens into why people
+                            behave the way they do than money. It's one of the most epic shows in the world.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </div>
