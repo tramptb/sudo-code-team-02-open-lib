@@ -45,38 +45,40 @@ body {
   padding: 0 20px;
   max-width: 1200px;
 }
-/*dd*/
-.rw-logo {
+
+.rw-header-container, .active {
   flex: 1;
-  margin-right: 30px;
+} 
+
+#rw-noti {
+  flex: 0;
 }
 
-.rw-search {
+#rw-search {
   flex: 5;
   margin-right: 30px;
 }
 
-.rw-user {
+#rw-user {
   flex: 1;
 }
 
-.rw-basket {
-  flex: 1;
+#rw-cart {
+  flex: 0;
 }
-/*dd*/
 
 .rw-logo img {
   max-width: 100%;
   height: auto;
 }
 
-.rw-search {
+#rw-search {
   display: flex;
   align-items: center;
   width: 70%; /* Adjust the width as needed */
 }
 
-.rw-search input[type="text"] {
+#rw-search input[type="text"] {
   flex: 1; /* Take up all available space */
   padding: 8px;
   border: none;
@@ -84,7 +86,7 @@ body {
   width: 100%; /* Make the input field 100% wide */
 }
 
-.rw-search button {
+#rw-search button {
   background-color: #3498db;
   color: #fff;
   border: none;
@@ -94,7 +96,11 @@ body {
   padding: 8px 12px;
 }
 
-.rw-search input {
+#rw-search button:hover {
+  background-color: #2980b9;
+}
+
+#rw-search input {
   flex: 1; /* Take up all available space */
   padding: 8px;
   border: none;
@@ -103,7 +109,7 @@ body {
 }
 
 /* User section styles */
-.rw-user {
+#rw-user {
   display: inline-block;
   margin-right: 30px;
   padding: 5px;
@@ -113,17 +119,14 @@ body {
   color: #fff; /* Adjust the text color as needed */
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
-.rw-user i {
+#rw-user i {
   margin-right: 10px;
 }
 
-.rw-user:hover {
-  background-color: #0056b3; /* Adjust the hover background color as needed */
-}
-
-.rw-basket {
+#rw-noti {
   display: inline-block;
   margin-right: 30px;
   padding: 5px;
@@ -131,10 +134,22 @@ body {
   border-radius: 5px;
   background-color: #007bff; /* Adjust the background color as needed */
   color: #fff; /* Adjust the text color as needed */
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.rw-basket:hover {
-  background-color: #0056b3; /* Adjust the hover background color as needed */
+#rw-cart {
+  display: inline-block;
+  margin-right: 30px;
+  padding: 5px;
+  border: 1px solid #007bff; /* Adjust the border color as needed */
+  border-radius: 5px;
+  background-color: #007bff; /* Adjust the background color as needed */
+  color: #fff; /* Adjust the text color as needed */
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 /* Breadcrumb styles */
@@ -148,12 +163,12 @@ body {
   color: #333;
 }
 
-.rw-search {
+#rw-search {
   display: flex;
   width: 300px; /* Adjust the width as needed */
 }
 
-.rw-search input {
+#rw-search input {
   padding: 8px;
   border: none;
   border-radius: 4px;
@@ -168,17 +183,13 @@ button {
   cursor: pointer;
 }
 
-.rw-user {
+#rw-user {
   margin-right: 30px;
   padding: 5px;
   border: 1px solid #007bff; /* Adjust the border color as needed */
   border-radius: 5px;
   background-color: #007bff; /* Adjust the background color as needed */
   color: #fff; /* Adjust the text color as needed */
-}
-
-.rw-user:hover {
-  background-color: #0056b3; /* Adjust the hover background color as needed */
 }
 
 .rw-basket {
