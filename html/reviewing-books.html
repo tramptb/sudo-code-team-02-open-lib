@@ -32,30 +32,54 @@
             <nav id="rw-main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="rw-books.html">Books</a></li>
-                    <li><a href="rw-borrowed-books.html">Borrowed Books</a></li>
-                    <li><a href="rw-returning-books.html">Returning Books</a></li>
-                    <li><a href="rw-returned-books.html">Returned Books</a></li>
-                    <li><a href="rw-users.html">Users</a></li>
+                    <li><a href="rw-books.html">Category</a>
+                        <ul>
+                            <li><a href="rw-books.html">Comic</a></li>
+                            <li><a href="rw-books.html">Horror</a></li>
+                            <li><a href="rw-books.html">Romance</a></li>
+                            <li><a href="rw-books.html">Science Fiction</a></li>
+                            <li><a href="rw-books.html">Cooking</a></li>
+                            <li><a href="rw-books.html">Science</a></li>
+                            <li><a href="rw-books.html">Comics</a></li>
+                            <li><a href="rw-books.html">Art</a></li>
+                            <li><a href="rw-books.html">Journal</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="rw-borrowed.html">Borrowed</a>
+                    </li>
+                    <li><a href="rw-returned.html">Returned</a></li>
                 </ul>
+
+                <!-- Search, User Profile, Notification, Cart -->
+
+                <div id="rw-search">
+                    <input type="text" placeholder="Search">
+                    <button type="submit" title="Search">
+                        <i class="fas fa-search"></i>
+                </div>
+
+                <div class="rw-user-profile">
+                    <div class="rw-user-profile-name">
+                        <span>User</span>
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+
+                    <div class="rw-user-profile-options">
+                        <a href="rw-profile.html">Profile</a>
+                        <a href="rw-login.html">Logout</a>
+                    </div>
+                </div>
+
+                <div id="rw-noti">
+                    <i class="fas fa-bell"></i>
+                    <a href="#" title="notification"></a>
+                </div>
+
+                <div id="rw-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <a href="#" title="cart"></a>
+                </div>
             </nav>
-
-            <div id="rw-search">
-                <input type="text" placeholder="Search">
-                <button type="submit" title="Search">
-                    <i class="fas fa-search"></i>
-            </div>
-
-            <div id="rw-noti">
-                <i class="fas fa-bell"></i>
-                <a href="#" title="bell"></a>
-            </div>
-
-            <div id="rw-cart">
-                <i class="fas fa-shopping-cart"></i>
-                <a href="#" title="cart"></a>
-            </div>
-
         </div>
 
     </header>
@@ -67,7 +91,7 @@
             <i class="fa-solid fa-chevron-right fa-sm"></i>
             <a href="rw-books.html">Books</a>
             <i class="fa-solid fa-chevron-right fa-sm"></i>
-            <span>Reviewing Books</span>
+            <a href="rw-books.html">Book Details</a>
         </div>
 
         <section class="rw-book-section">
@@ -78,7 +102,6 @@
                     <img src="https://salt.tikicdn.com/cache/750x750/ts/product/d8/79/d9/8c3f38ce32884e18b83d73260173b16c.jpg.webp"
                         alt="Book Cover 2">
                 </div>
-
             </article>
 
 
@@ -319,7 +342,7 @@
             </div>
         </section>
 
-        
+
 
 
 
