@@ -539,4 +539,14 @@ hr {
     flex: 100%;
     margin-right: 0;
   }
+
+  .rw-borrow-overview {
+    flex: 100%;
+    margin-right: 0;
+  }
+
+  .rw-borrow-info {
+    flex: 100%;
+    margin-right: 0;
+  }
 }
