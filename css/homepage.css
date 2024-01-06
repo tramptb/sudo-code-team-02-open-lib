@@ -189,113 +189,178 @@ body {
 }
 
 .hp-main-content {
-    padding: 20px;
+  padding: 20px;
 }
 
 /* Style for the banner section */
 .hp-banner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f4f4f4;
-    padding: 20px;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .hp-banner-content {
-    flex: 1;
+  flex: 1;
 }
 
 .hp-banner-content h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
+  font-size: 2em;
+  margin-bottom: 10px;
 }
 
 .hp-banner-content p {
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
 .hp-banner-content a {
-    display: inline-block;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    margin-top: 10px;
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 10px;
 }
 
 .hp-banner-img {
-    flex: 1; /* Take up remaining space in the flex container */
+  flex: 1; /* Take up remaining space in the flex container */
 }
 
 .hp-banner-img img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px; /* Optional: Add border-radius for a rounded corner effect */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional: Add border-radius for a rounded corner effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
 }
 
 /* Style for the slider section */
-.slider-container {
-    margin-bottom: 20px;
+/* Reset some default styles for the slider */
+.slider-container,
+.slider-for,
+.slider-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.slider-for img,
-.slider-nav img {
-    width: 100%;
-    height: auto;
+/* Style for the main container */
+.slider-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Style for each slider item with spacing */
+.slider-item {
+  margin-right: 15px; /* Adjust the margin as needed for spacing */
+  width: 100%;
+  overflow: hidden; /* Hide the overflowing image */ 
+}
+
+/* Remove the right margin from the last slider item to avoid extra spacing */
+.slider-item:last-child {
+  margin-right: 0;
+}
+
+/* Style for the main slider */
+.slider-for {
+  width: 100%;
+}
+
+/* Style for the navigation slider */
+.slider-nav {
+  width: 100%;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+/* Style for the navigation slider items */
+.slider-nav .slider-item {
+  opacity: 0.7; /* Adjust opacity as needed */
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Style for the selected navigation slider item */
+.slider-nav .slick-center .slider-item {
+  opacity: 1;
+  border: 2px solid #333; /* Adjust border color as needed */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Adjust box shadow as needed */
+}
+
+/* Optional: Add some styling for the images */
+.slider-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px; /* Optional: Add border-radius for a rounded corner effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
 }
 
 /* Style for the new release, top-rated, and top-borrowed sections (sample styling) */
 .hp-new-release,
 .hp-top-rated,
 .hp-top-borrowed {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .hp-new-release-title,
 .hp-top-rated-title,
 .hp-top-borrowed-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .hp-new-release-content,
 .hp-top-rated-content,
 .hp-top-borrowed-content {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .hp-new-release-book,
 .hp-top-rated-book,
 .hp-top-borrowed-book {
-    border: 1px solid #ddd;
-    margin: 0 10px 20px;
-    padding: 10px;
-    width: calc(33.33% - 20px);
-    box-sizing: border-box;
+  border: 1px solid #ddd;
+  margin: 0 10px 20px;
+  padding: 10px;
+  width: calc(33.33% - 20px);
+  box-sizing: border-box;
 }
 
 .hp-new-release-book-img,
 .hp-top-rated-book-img,
 .hp-top-borrowed-book-img {
-    text-align: center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .hp-new-release-book-img img,
 .hp-top-rated-book-img img,
 .hp-top-borrowed-book-img img {
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 50%;
+  height: auto;
+  border-radius: 8px; /* Optional: Add border-radius for a rounded corner effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+}
+
+.hp-new-release-book-title,
+.hp-top-rated-book-title,
+.hp-top-borrowed-book-title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
 }
 
 /* Style for the footer */
 .rw-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
 }
