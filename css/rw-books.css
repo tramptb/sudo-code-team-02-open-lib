@@ -1,145 +1,552 @@
+/* General Styles */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-.rw-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-}
-
+/* Header Styles */
 #rw-main-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 15px 0;
+  background-color: #333;
+  color: white;
+
+  /* Add the following to make the header sticky */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
 }
+
+
+.rw-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.rw-header-container a {
+  text-decoration: none;
+  color: white;
+}
+
+.rw-header-container img {
+  height: 40px; /* Adjust the height of the logo as needed */
+}
+
+/* Navigation Styles */
+#rw-main-nav {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+#rw-main-nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  display: block;
+}
+
+
+#rw-main-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+#rw-main-nav li {
+  position: relative;
+  margin-right: 15px;
+}
+
+#rw-main-nav a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+#rw-main-nav a:hover {
+  color: #007bff;
+}
+
+/* Submenu Styles */
+#rw-main-nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#rw-main-nav ul li:hover > ul {
+  display: flex;
+  flex-direction: column;
+}
+
+#rw-main-nav ul ul li {
+  width: 150px;
+  padding: 10px;
+  margin: 0;
+}
+
+/* User Profile Styles */
+.rw-user-profile {
+  position: relative;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  /* Add the following to make the user profile dropdown sticky */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.rw-user-profile-name {
+  margin-right: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.rw-user-profile-name span {
+  margin-right: 5px;
+}
+
+.rw-user-profile-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.rw-user-profile:hover .rw-user-profile-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.rw-user-profile-options a {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.rw-user-profile-options a:hover {
+  background-color: #555;
+}
+
+/* Search, Notification, and Cart Styles */
+#rw-search,
+#rw-noti,
+#rw-cart {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+
+#rw-search input {
+  padding: 5px;
+  margin-right: 5px;
+  width: 300px;
+  height: 20px;
+  border-radius: 4px; 
+}
+
+#rw-search button {
+  padding: 5px;
+  cursor: pointer;
+  background-color: #555;
+  color: white;
+  border: none;
+  height: 30px;
+  width: 30px;
+}
+
+#rw-search button:hover {
+  background-color: #0056b3;
+}
+
+#rw-noti a,
+#rw-cart a {
+  margin-left: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+#rw-noti:hover,
+#rw-cart:hover {
+ color: yellow;
+}
+
+
+/* Breadcrumb styles */
+.rw-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 
 .rw-breadcrumb {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 14px;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 4px;
 }
 
 .rw-breadcrumb a {
-    text-decoration: none;
-    color: #333;
+  text-decoration: none;
+  color: #333;
+}
+
+.rw-breadcrumb a:hover {
+  text-decoration: underline;
+  color: #007bff;
 }
 
 .rw-breadcrumb i {
-    margin: 0 5px;
+  margin: 0 5px;
 }
 
+/* Book section styles */
 .rw-book-section {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-.rw-book-cover img {
-    max-width: 100%;
-    height: auto;
+
+.rw-book-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.rw-book-cover {
+  flex: 1;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 4px;
 }
 
 .slider-cover {
-    overflow: hidden;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.slider-cover img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 10px;
 }
 
 .rw-book-info {
-    flex: 0 0 60%;
-    padding-left: 20px;
+  flex: 2;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 4px;
 }
 
 .rw-book-info h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .rw-book-info p {
-    margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .rw-book-info h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 
+.rw-book-details {
+  margin-bottom: 10px;
+}
+
+.rw-book-details p {
+  margin: 5px 0;
+}
+
+.rw-book-details p strong {
+  font-weight: bold;
+}
+
+.rw-rating-point span {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.rw-book-details span {
+  margin-right: 5px;
+}
+
+.rw-book-details,
+.rw-book-description {
+  margin-bottom: 10px;
+}
+
+.rw-rating-point i {
+  color: #f1c40f;
+}
+
+.rw-book-description {
+  font-size: 16px;
+}
+
+.rw-book-description p {
+  margin-bottom: 5px;
+}
+
+.rw-book-quantity-btn {
+  display: inline-block;
+  margin-bottom: 15px;
+  font-size: 10px;
+}
+
+.rw-book-cart-btn {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border: 1px solid #007bff; /* Adjust the border color as needed */
+  border-radius: 5px;
+  background-color: #007bff; /* Adjust the background color as needed */
+  color: #fff; /* Adjust the text color as needed */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.rw-book-cart-btn:hover {
+  background-color: #0056b3; /* Adjust the hover background color as needed */
+}
+
+.rw-book-quantity {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.rw-book-quantity input {
+  width: 50px;
+  padding: 5px;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.rw-book-quantity button {
+  padding: 5px;
+  cursor: pointer;
+  background-color: #555;
+  color: white;
+  border: none;
+}
+
+.rw-book-quantity button:hover {
+  background-color: #333;
+}
+
+/* Borrow section styles */
 .rw-borrow-section {
-    margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-.rw-borrow-section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+.rw-borrow-overview {
+  flex: 1;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 4px;
 }
 
-.rw-borrow-section p {
-    margin-bottom: 10px;
+.rw-borrow-overview-rating {
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
 
-.rw-borrow-section ul {
-    list-style: none;
-    padding: 0;
+.rw-borrow-overview, .rw-borrow-overview-rating {
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
 
-.rw-borrow-section li {
-    margin-bottom: 10px;
+.rw-borrow {
+  display: block;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 4px;
 }
 
+
+.rw-borrow-overview i {
+  color: #f1c40f;
+  margin-right: 5px;
+}
+
+.rw-borrow-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.rw-borrow-info {
+  flex: 1;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.rw-borrow-ratting i {
+  color: #f1c40f;
+}
+
+.rw-borrow-ratting span {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.rw-borrow-ratting {
+  margin-bottom: 5px;
+}
+
+.rw-borrow {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.rw-borrowed i {
+  color: #2ecc71;
+}
+.rw-borrowed span {
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.rw-borrow-info i {
+  margin-right: 5px;
+}
+
+.rw-borrow-img {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+hr {
+  margin: 10px 0;
+  opacity: 0.3;
+}
+
+.rw-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.rw-pagination i {
+  margin: 0 5px;
+  color: #666;
+}
+
+.rw-pagination a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 5px;
+  color: #3498db;
+  width: 30px;
+  height: 30px;
+  line-height: 24px;
+  border: 1px solid #3498db;
+  border-radius: 50%;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.rw-pagination a:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.rw-pagination span {
+  
+}
+
+/* .rw-pagination a,
+.rw-pagination span {
+    
+} */
+
+/* Style for active page link */
+.rw-pagination a[href="active"] {
+  background-color: #3498db;
+  color: #fff;
+}
+
+/* Footer styles */
 .rw-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+  margin-top: 20px;
+  padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
 }
 
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .rw-search {
+    width: 100%;
+  }
 
-#rw-main-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-}
+  .rw-book-cover {
+    flex: 100%;
+    margin-right: 0;
+  }
 
-.rw-header-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+  .rw-book-info {
+    flex: 100%;
+    margin-right: 0;
+  }
 
-.rw-logo img {
-    max-width: 100%;
-    height: auto;
-}
+  .rw-borrow-overview {
+    flex: 100%;
+    margin-right: 0;
+  }
 
-.rw-search {
-    display: flex;
-    align-items: center;
-}
-
-.rw-search input {
-    padding: 8px;
-    margin-right: 5px;
-}
-
-.rw-search button {
-    background-color: #fff;
-    border: none;
-    padding: 8px;
-    cursor: pointer;
-}
-
-.rw-user-icon,
-.rw-basket {
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.rw-user-icon:hover,
-.rw-basket:hover {
-    color: #ffcc00; /* Change to your desired hover color */
+  .rw-borrow-info {
+    flex: 100%;
+    margin-right: 0;
+  }
 }

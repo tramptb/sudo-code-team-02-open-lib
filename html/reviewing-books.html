@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Include Slick carousel CSS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <link rel="stylesheet" href="../css/rw-books.css">
+
+    <title>Reviewing Books</title>
+</head>
+
+<body>
+
+    <header id="rw-main-header">
+        <div class="rw-header-container">
+            <div class="active" href="#rw-main-header">
+                <img src="your-logo.png" alt="Your Logo">
+            </div>
+
+            <nav id="rw-main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rw-books.html">Category</a>
+                        <ul>
+                            <li><a href="rw-books.html">Comic</a></li>
+                            <li><a href="rw-books.html">Horror</a></li>
+                            <li><a href="rw-books.html">Romance</a></li>
+                            <li><a href="rw-books.html">Science Fiction</a></li>
+                            <li><a href="rw-books.html">Cooking</a></li>
+                            <li><a href="rw-books.html">Science</a></li>
+                            <li><a href="rw-books.html">Comics</a></li>
+                            <li><a href="rw-books.html">Art</a></li>
+                            <li><a href="rw-books.html">Journal</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="rw-borrowed.html">Manage</a>
+                        <ul>
+                            <li><a href="rw-borrowed.html">Borrowed</a></li>
+                            <li><a href="rw-borrowing.html">Borrowing</a></li>
+                            <li><a href="rw-reserved.html">Reserved</a></li>
+                            <li><a href="rw-reviewing.html">Reviewing</a></li>
+                            <li><a href="rw-favorites.html">Favorites</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <!-- Search, User Profile, Notification, Cart -->
+
+                <div id="rw-search">
+                    <input type="text" placeholder="Search">
+                    <button type="submit" title="Search">
+                        <i class="fas fa-search"></i>
+                </div>
+
+                <div class="rw-user-profile">
+                    <div class="rw-user-profile-name">
+                        <span>User</span>
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+
+                    <div class="rw-user-profile-options">
+                        <a href="rw-profile.html">Profile</a>
+                        <a href="rw-login.html">Logout</a>
+                    </div>
+                </div>
+
+                <div id="rw-noti">
+                    <i class="fas fa-bell"></i>
+                    <a href="#" title="notification"></a>
+                </div>
+
+                <div id="rw-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <a href="#" title="cart"></a>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <div class="rw-container">
+
+        <div class="rw-breadcrumb">
+            <a href="index.html">Home</a>
+            <i class="fa-solid fa-chevron-right fa-sm"></i>
+            <a href="rw-books.html">Books</a>
+            <i class="fa-solid fa-chevron-right fa-sm"></i>
+            <a href="rw-books.html">Book Details</a>
+        </div>
+
+        <section class="rw-book-section">
+            <article class="rw-book-cover">
+                <div class="slider-cover">
+                    <img src="https://salt.tikicdn.com/cache/750x750/ts/product/83/23/b7/14a42ae4f66c9b8b298aaef4b9671442.jpg.webp"
+                        alt="Book Cover 1">
+                    <img src="https://salt.tikicdn.com/cache/750x750/ts/product/d8/79/d9/8c3f38ce32884e18b83d73260173b16c.jpg.webp"
+                        alt="Book Cover 2">
+                </div>
+            </article>
+
+
+            <article class="rw-book-info">
+                <div class="rw-book-details">
+                    <h2>The Psychology of Money</h2>
+                    <p><strong>Author:</strong> Morgan Housel</p>
+                    <p><strong>Genre:</strong> Comic</p>
+                    <p><strong>Available:</strong> 20</p>
+                    <div class="rw-rating-point">
+                        <span>Rating: </span>
+                        <span>4.5</span>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="rw-book-description">
+                    <h3>Book description</h3>
+                    <p>
+                        Money is everywhere, it affects us all, and confuses most of us. People think about it in
+                        slightly different ways. It offers lessons that can be applied to many areas of life, such as
+                        risk, confidence, and happiness. Few topics provide a more powerful lens into why people behave
+                        the way they do than money. It's one of the most epic shows in the world.
+                    </p>
+
+                    <p>
+                        We rarely find ourselves in a situation of being in debt? Know how to save for times of
+                        hardship? Ready for retirement? Are there more practical views on the relationship between money
+                        and our happiness?
+                    </p>
+
+                    <p>
+                        We all do crazy things with money, because we're all new to the game, and what seems crazy to
+                        you might make sense to me. But no one is crazy – we all make decisions based on our own unique
+                        experiences that seem reasonable to us at any given time.
+                    </p>
+                </div>
+
+                <div class="rw-book-cart">
+                    <div class="rw-book-quantity">
+                        <span><strong>Quantity</strong></s>
+                            <button class="rw-book-quantity-btn" type="button" name="button"
+                                onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                title="Decrease Quantity">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <input class="rw-book-quantity-input" type="number" name="name" id="quantity" value="1"
+                                min="1" max="10" placeholder="Enter quantity">
+                            <button class="rw-book-quantity-btn" type="button" name="button"
+                                onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                title="Increase Quantity">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                    </div>
+                    <button class="rw-book-cart-btn" type="button" name="button">Add to cart</button>
+                </div>
+            </article>
+        </section>
+
+
+        <section class="rw-borrow-section">
+            <h2>Reader reviews</h2>
+
+            <div class="rw-borrow-overview">
+                <div class="rw-borrow-overview-rating">
+                    <span>Rating: </span>
+                    <span>4.5</span>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <div class="rw-borrow-overview-num">
+                    <span>Number of reviews: </span>
+                    <span>3</span>
+                </div>
+            </div>
+
+            <div class="rw-borrow-container">
+                <div class="rw-borrow">
+                    <div class="rw-borrow-info">
+                        <hr>
+                        <div class="rw-borrow-ratting">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4.5</span>
+                        </div>
+
+                        <div class="rw-borrowed">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Borrowed</span>
+                        </div>
+
+                        <div class="rw-borrow-user">
+                            <i class="fas fa-user"></i>
+                            <span>User Name</span>
+                        </div>
+                        <div class="rw-borrow-date">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>20/10/2021</span>
+                        </div>
+                    </div>
+                    <div class="rw-borrow-content">
+                        <p>
+                            Money is everywhere, it affects us all, and confuses most of us. People think about it in
+                            slightly different ways. It offers lessons that can be applied to many areas of life, such
+                            as risk, confidence, and happiness. Few topics provide a more powerful lens into why people
+                            behave the way they do than money. It's one of the most epic shows in the world.
+                        </p>
+
+                    </div>
+
+                    <div class="rw-borrow-img">
+                        <img src="https://salt.tikicdn.com/cache/750x750/ts/review/4d/66/1a/31de6b63e64710dc7f3cc55213793208.jpg.webp"
+                            alt="Book Cover 1">
+
+                        <img src="https://salt.tikicdn.com/cache/750x750/ts/review/1a/2e/10/3cb42d7f1545e58ffca256a7327efeae.jpg.webp"
+                            alt="Book Cover 2">
+                    </div>
+                    <hr>
+
+                    <div class="rw-borrow">
+                        <div class="rw-borrow-info">
+
+                            <div class="rw-borrow-ratting">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.5</span>
+                            </div>
+
+                            <div class="rw-borrowed">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Borrowed</span>
+                            </div>
+
+                            <div class="rw-borrow-user">
+                                <i class="fas fa-user"></i>
+                                <span>User Name</span>
+                            </div>
+
+                            <div class="rw-borrow-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>20/10/2021</span>
+                            </div>
+                        </div>
+                        <div class="rw-borrow-content">
+                            <p>
+                                Money is everywhere, it affects us all, and confuses most of us. People think about it
+                                in
+                                slightly different ways. It offers lessons that can be applied to many areas of life,
+                                such
+                                as risk, confidence, and happiness. Few topics provide a more powerful lens into why
+                                people
+                                behave the way they do than money. It's one of the most epic shows in the world.
+                            </p>
+                        </div>
+
+
+                        <div class="rw-borrow-img">
+                            <img src="https://salt.tikicdn.com/cache/750x750/ts/review/60/a5/fb/03432ae60100b139e5b93c21a72f0e04.jpg.webp"
+                                alt="Book Cover 1">
+
+                            <img src="https://salt.tikicdn.com/cache/750x750/ts/review/1b/68/cb/32ede75354bddc92ddccbef5fe260c62.jpg.webp"
+                                alt="Book Cover 2">
+                        </div>
+                    </div>
+
+                    <hr>
+                    <div class="rw-borrow">
+                        <div class="rw-borrow-info">
+
+                            <div class="rw-borrow-ratting">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.5</span>
+                            </div>
+
+                            <div class="rw-borrowed">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Borrowed</span>
+                            </div>
+
+                            <div class="rw-borrow-user">
+                                <i class="fas fa-user"></i>
+                                <span>User Name</span>
+                            </div>
+                            <div class="rw-borrow-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>20/10/2021</span>
+                            </div>
+                        </div>
+                        <div class="rw-borrow-content">
+                            <p>
+                                Money is everywhere, it affects us all, and confuses most of us. People think about it
+                                in
+                                slightly different ways. It offers lessons that can be applied to many areas of life,
+                                such
+                                as risk, confidence, and happiness. Few topics provide a more powerful lens into why
+                                people
+                                behave the way they do than money. It's one of the most epic shows in the world.
+                            </p>
+                        </div>
+
+                        <div class="rw-borrow-img">
+                            <img src="https://salt.tikicdn.com/cache/750x750/ts/review/72/56/ca/450844abc77159a0ea8a4aab089a5e53.jpg.webp"
+                                alt="Book Cover 1">
+
+                            <img src="https://salt.tikicdn.com/cache/750x750/ts/review/22/2a/04/2c8ad8519104d80353b6421078029446.jpg.webp"
+                                alt="Book Cover 2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rw-pagination">
+                <i class="fa-solid fa-chevron-left"></i>
+                <a href="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a class="#" href="#">4</a>
+                <a href="#">5</a>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- Write script to make the book cover images slide vertically -->
+        <script>
+            $(document).ready(function () {
+                $('.slider-cover').slick({
+                    vertical: true,
+                    verticalSwiping: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    arrows: false,
+                    dots: false,
+                    pauseOnHover: false,
+                    pauseOnFocus: false,
+                });
+            });
+        </script>
+
+    </div>
+
+    <footer class="rw-footer">
+        <p>&copy; 2023 Your Library Name. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
