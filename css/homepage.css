@@ -256,8 +256,8 @@ body {
 
 /* Style for the main container */
 .slider-container {
-  max-width: 800px;
-  margin: auto;
+  max-width: 800px; /* Adjust the max-width as needed */
+  margin: 20px auto;
 }
 
 /* Style for each slider item with spacing */
