@@ -220,13 +220,13 @@ table {
 
 table th,
 table td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
 }
 
 table th {
-  background-color: #f2f2f2;
+  background-color: #333;
 }
 
 button {
@@ -287,36 +287,57 @@ button {
 
 .bb-search {
   display: flex;
-  padding: 10px 0;
   margin-bottom: 20px;
-  border-bottom: 1px solid #ddd;
+  justify-content: center;
+  align-items: center;
 }
 
 .bb-search input[type="text"] {
-  width: 200px;
   padding: 5px;
   margin-right: 5px;
   width: 300px;
   height: 20px;
   border-radius: 4px;
+  font-size: 14px;
 }
 
-.bb-breakrumbs {
+.bb-search button {
+  padding: 8px 12px; /* Adjust padding for better button appearance */
+  background-color: #007bff; /* Blue color, you can change it as needed */
+  color: #fff; /* White text, you can change it as needed */
+  border: none;
+  border-radius: 4px; /* Add border radius for a softer look */
+  cursor: pointer;
+}
+
+.bb-breadcrumbs {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
   margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 4px;
 }
 
-.bb-breakrumbs a {
+.bb-breadcrumbs a {
   text-decoration: none;
-  color: #007bff; /* You can change the color as needed */
+  color: #333;
 }
 
-.bb-breakrumbs i {
+.bb-breadcrumbs a:hover {
+  text-decoration: underline;
+  color: #007bff;
+}
+
+.bb-breadcrumbs i {
   margin: 0 5px;
 }
 
 .bb-table {
-  width: 85%;
-  margin: 20px 0;
+  width: 100%;
+  margin: 20px auto;
+  font-size: 14px;
+  color: #333;
 }
 
 .bb-table th {
@@ -339,41 +360,42 @@ button {
 }
 
 .bb-btn {
-    text-align: center;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .bb-btn-cancel {
-    background-color: #dc3545; /* Red color, you can change it as needed */
-    color: #fff; /* White text, you can change it as needed */
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    margin-right: 10px;
-    cursor: pointer;
+  background-color: #dc3545; /* Red color, you can change it as needed */
+  color: #fff; /* White text, you can change it as needed */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
 /* Styles for the cancel icon */
 .fa-cancel {
-    font-size: 20px;
-    color: #dc3545; /* Red color, you can change it as needed */
-    margin-right: 5px;
+  font-size: 20px;
+  color: #dc3545; /* Red color, you can change it as needed */
+  margin-right: 5px;
 }
 
 /* Styles for the borrow button */
 .bb-btn-borrow {
-    background-color: #007BFF; /* Blue color, you can change it as needed */
-    color: #fff; /* White text, you can change it as needed */
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #007bff; /* Blue color, you can change it as needed */
+  color: #fff; /* White text, you can change it as needed */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 /* Styles for the shopping cart icon */
 .fa-cart-shopping {
-    font-size: 20px;
-    color: #007BFF; /* Blue color, you can change it as needed */
-    margin-right: 5px;
+  font-size: 20px;
+  color: #007bff; /* Blue color, you can change it as needed */
+  margin-right: 5px;
 }
 
 .bb-book-quantity-btn {
