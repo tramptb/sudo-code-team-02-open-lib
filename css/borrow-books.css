@@ -311,12 +311,12 @@ button {
 }
 
 .bb-breakrumbs i {
-  margin: 0 5px; 
+  margin: 0 5px;
 }
 
 .bb-table {
-    width: 85%;
-    margin: 20px 0;
+  width: 85%;
+  margin: 20px 0;
 }
 
 .bb-table th {
@@ -339,24 +339,58 @@ button {
 }
 
 .bb-btn {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 8px 12px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
+}
+
+.bb-btn-cancel {
+    background-color: #dc3545; /* Red color, you can change it as needed */
+    color: #fff; /* White text, you can change it as needed */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
     cursor: pointer;
 }
 
-.bb-btn:hover {
-    background-color: #45a049;
-}
-
-input[type="checkbox"] {
+/* Styles for the cancel icon */
+.fa-cancel {
+    font-size: 20px;
+    color: #dc3545; /* Red color, you can change it as needed */
     margin-right: 5px;
 }
+
+/* Styles for the borrow button */
+.bb-btn-borrow {
+    background-color: #007BFF; /* Blue color, you can change it as needed */
+    color: #fff; /* White text, you can change it as needed */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Styles for the shopping cart icon */
+.fa-cart-shopping {
+    font-size: 20px;
+    color: #007BFF; /* Blue color, you can change it as needed */
+    margin-right: 5px;
+}
+
+.bb-book-quantity-btn {
+  display: inline-block;
+  padding: 5px;
+  margin-bottom: 15px;
+  font-size: 8px;
+  cursor: pointer;
+}
+
+.bb-book-quantity-input {
+  width: 40px;
+  height: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
 .bb-pagination {
   display: flex;
   justify-content: right;
