@@ -1,191 +1,5 @@
-/* General Styles */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-}
-
-/* Header Styles */
-#rw-main-header {
-  background-color: #333;
-  color: white;
-
-  /* Add the following to make the header sticky */
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-
-.rw-header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
-
-.rw-header-container a {
-  text-decoration: none;
-  color: white;
-}
-
-.rw-header-container img {
-  height: 40px; /* Adjust the height of the logo as needed */
-}
-
-/* Navigation Styles */
-#rw-main-nav {
-  display: flex;
-  align-items: center;
-  margin-left: 40px;
-}
-#rw-main-nav ul li a {
-  color: white;
-  text-decoration: none;
-  padding: 5px;
-  display: block;
-}
-
-#rw-main-nav ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  align-items: center;
-}
-
-#rw-main-nav li {
-  position: relative;
-  margin-right: 15px;
-}
-
-#rw-main-nav a {
-  text-decoration: none;
-  color: white;
-  position: relative;
-}
-
-#rw-main-nav a:hover {
-  color: #007bff;
-}
-
-/* Submenu Styles */
-#rw-main-nav ul ul {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #333;
-  border-radius: 0 0 5px 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-#rw-main-nav ul li:hover > ul {
-  display: flex;
-  flex-direction: column;
-}
-
-#rw-main-nav ul ul li {
-  width: 150px;
-  padding: 10px;
-  margin: 0;
-}
-
-/* User Profile Styles */
-.rw-user-profile {
-  position: relative;
-  margin-left: 50px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-
-  /* Add the following to make the user profile dropdown sticky */
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-
-.rw-user-profile-name {
-  margin-right: 10px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-}
-
-.rw-user-profile-name span {
-  margin-right: 5px;
-}
-
-.rw-user-profile-options {
-  display: none;
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: #333;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.rw-user-profile:hover .rw-user-profile-options {
-  display: flex;
-  flex-direction: column;
-}
-
-.rw-user-profile-options a {
-  padding: 10px;
-  text-decoration: none;
-  color: white;
-}
-
-.rw-user-profile-options a:hover {
-  background-color: #555;
-}
-
-/* Search, Notification, and Cart Styles */
-#rw-search,
-#rw-noti,
-#rw-cart {
-  display: flex;
-  align-items: center;
-  margin-left: 40px;
-}
-
-#rw-search input {
-  padding: 5px;
-  margin-right: 5px;
-  width: 300px;
-  height: 20px;
-  border-radius: 4px;
-}
-
-#rw-search button {
-  padding: 5px;
-  cursor: pointer;
-  background-color: #555;
-  color: white;
-  border: none;
-  height: 30px;
-  width: 30px;
-}
-
-#rw-search button:hover {
-  background-color: #0056b3;
-}
-
-#rw-noti a,
-#rw-cart a {
-  margin-left: 5px;
-  text-decoration: none;
-  color: white;
-}
-
-#rw-noti:hover,
-#rw-cart:hover {
-  color: yellow;
-}
-
 .hp-main-content {
-  padding: 20px;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -194,27 +8,30 @@ body {
 }
 
 /* Style for the banner section */
-.hp-banner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #f0f0f0;
+.hp-banner-section {
+    padding: 16px 24px;
+    background: #e0ecfc;
+    background-image: -webkit-gradient(linear, right top, left top, color-stop(7%, #e0ecfc), to(#bcbcdd));
+    background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
 }
 
-.hp-banner-content {
-  flex: 1;
-  max-width: 600px;
+.hp-banner-wrapper{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hp-banner-content{
+    flex-grow: 1;
 }
 
 .hp-banner-content h1 {
-  font-size: 2.5em;
-  color: #2c3e50; /* Dark gray color */
+  font-size: 2rem;
+  color: #0056b3; /* Dark gray color */
   margin-bottom: 10px;
-}
-
-.hp-banner-content h1:hover {
-  color: #0056b3;
 }
 
 .hp-banner-content p {
@@ -232,17 +49,35 @@ body {
   margin-top: 10px;
 }
 
-.hp-banner-img {
-  flex: 1; /* Take up remaining space in the flex container */
-}
-
-.hp-banner-img img {
-  width: 600px; /* Set a fixed width, adjust as needed */
+.hp-banner-img  {
+  flex-shrink: 0;
   height: auto;
   max-width: 100%; /* Ensure the image stays responsive */
-  border-radius: 8px; /* Optional: Add border-radius for a rounded corner effect */
+  border-radius: 20px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
 }
+
+@media only screen and (min-width: 992px) {
+    .hp-banner-content h1{
+        font-size: 4rem;
+    }
+    .hp-banner-img {
+        margin-left: 24px;
+        width: 564px;
+    }
+}
+
+#sliderHomepageBanner .slider-item img{
+    width: 232px;
+    height: auto;
+}
+
+#sliderHomepageBanner .slick-list .slick-track .slider-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* Style for the slider section */
 /* Reset some default styles for the slider */
@@ -330,9 +165,17 @@ body {
   width: 100%;
 }
 
+.hp-new-release-book-info, .hp-top-rated-book-info, .hp-top-borrowed-book-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--bs-body-color);
+}
+
 .hp-new-release-book,
 .hp-top-rated-book,
 .hp-top-borrowed-book {
+    text-decoration: none;
   border: 1px solid #ddd;
   margin: 0 10px 20px;
   padding: 10px;
@@ -367,14 +210,30 @@ body {
   margin-bottom: 10px;
 }
 
-/* Style for the footer */
-.rw-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 1em;
-  z-index: 1;
-  bottom: 0;
+@media only screen and (min-width: 768px) {
+    .hp-banner-section{
+        padding: 20px 32px ;
+    }
 }
+
+@media only screen and (min-width: 992px) {
+    .hp-banner-section{
+        padding: 80px 0;
+    }
+    .hp-banner-wrapper{
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+
+}
+
+@media only screen and (min-width: 1400px){
+
+}
+
+
+
 
 

@@ -1,8 +1,12 @@
 
-    function searchBook() {
+document.addEventListener('DOMContentLoaded', () => {
+});
+
+
+function searchBook() {
       let valueSearch = document.getElementById("search").value.toLowerCase();
       let searchType = document.getElementById("searchType").value.toLowerCase();
-      
+
       if (valueSearch.trim() !== "") {
         fetch("http://localhost:3003/books")
           .then(response => response.json())
@@ -30,11 +34,11 @@
                 );
               }
             });
-  
+
             // Chuyển hướng sang trang search.html với kết quả tìm kiếm
             window.location.href = `search.html?search=${valueSearch}&type=${searchType}&results=${JSON.stringify(bookSearch)}`;
           })
           .catch(error => console.log(error));
-      } 
+      }
     }
-  
+
