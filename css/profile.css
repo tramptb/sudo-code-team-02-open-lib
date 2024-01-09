@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --success-color: #2691d9;
+    --error-color: #e74c3c;
+    --hover: #069a;
+}
+
+html {
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header{
+    height: 60px;
+    background: #333;
+    margin-bottom: 100px;
+}
+
+.account{
+    display: flex;
+    margin: 10px 10%;
+}
+
+.account__avt{
+    width: 40%;
+    text-align: center;
+    background: #F5F5F5;
+}
+
+.account-img{
+    margin-top: 30%;
+}
+
+.name{
+    color: #000;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.update-img{
+    display: block;
+    width: 50%;
+    font-size: 10px;
+    background: var(--success-color);
+    color: #fff;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.update-img:hover{
+    background-color:#069a;
+
+}
+
+#input-file{
+    display: none;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+h3{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--success-color);
+}
+
+.account__info{
+    width: 60%; 
+    padding: 50px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.062);
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-bottom: 10px;
+}
+
+input{
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px;
+  height: 35px;
+  background: #F5F5F5;
+  outline: none;
+  border: none;
+}
+
+.selection{
+    float: right;
+}
+
+.save{
+    background-color: var(--success-color);
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.save:hover{
+    background-color:#069a;
+    cursor: pointer;
+    
+}
+
+.cancel{
+    padding: 10px;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.footer{
+    height: 120px;
+    background-color: #333;
+    margin-top: 100px;
+}
+
+
+/* PC */
+@media (min-width: 64em)
+{
+
+}
+
+/*
+PC: >= 1024px
+Tablet: >= 740px & < 1024px
+Mobile: < 740px
+*/
+
+/* Tablet & mobile*/
+@media (max-width: 63.9375em){
+    .account{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .account__avt{
+        background-color: #fff;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.062);
+    }
+
+    .account__info{
+        padding: 30px;
+    }
+    .account__info,
+    .account__avt{
+        width: 100%;
+    }
+
+    .account-img{
+        display: flex;
+        margin-top: 0;
+        padding: 15px;
+    }
+
+    img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .name{
+        margin-left: 20px;
+    }
+
+    .update-img{
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    h3{
+        display: none;
+    }
+
+
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 46.1875em)
+{
+
+}

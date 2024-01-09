@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/search.css">
+    <title>Search Results</title>
+    
+</head>
+
+<body>
+    <div class="container">
+        <section class="detail">
+            
+        </section>
+
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            const search = urlParams.get('search');
+            const type = urlParams.get('type');
+            const results = JSON.parse(urlParams.get('results'));
+
+            
+            document.querySelector(".detail").innerHTML = '';
+            let book = '';
+            results.forEach(value => {
+                book += `
+                    <div class="detail__prd">
+                        <img src="${value.img}">
+                        <div class="detail__prd-des">
+                        <h4>${value['book name']}</h4>
+                        <p>${value.author}</p>
+                        <div>
+                            <button class="borrow">Borrow</button>  
+                    </div>
+                `;
+            });
+
+            document.querySelector(".detail").innerHTML = book;
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "user1",
+      "image": "../img/profile.png",
+      "email": "user1@gmail.com",
+      "password": "12345678zZ@"
+    },
+    {
+      "id": 2,
+      "name": "user2",
+      "image": "../img/book.png",
+      "email": "user2@gmail.com",
+      "password": "87654321zZ@"
+    },
+    {
+      "id": 3,
+      "name": "user123",
+      "image": "../img/profile.png",
+      "email": "user123@gmail.com",
+      "password": "123456@zZ"
+    },
+    {
+      "id": 4,
+      "name": "jasnaminemine",
+      "image": "../img/profile.png",
+      "email": "jasnaminemine@gmail.com",
+      "password": "123456@zZ"
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "book name": "A Brief History of Time",
+      "author": "Stephen Hawking",
+      "category": "Science",
+      "description": "Stephen Hawking's 'A Brief History of Time' is a global phenomenon, with over ten million copies sold and translations into thirty languages. First published in 1988, the book delves into advanced ideas about the universe. Over the past two decades, advancements in observing the micro and macrocosmic worlds have ushered in a new golden age for cosmology and theoretical sciences. Professor Hawking has played a pivotal role in this intellectual renaissance.",
+      "img": "../img/science.jpg",
+      "available": 5
+    },
+    {
+      "id": 2,
+      "book name": "The dandelion years",
+      "author": "Erica James",
+      "category": "Romance",
+      "description": "Ashcombe was the most beautiful house Saskia had ever seen as a little girl. A rambling pink cottage on the edge of the Suffolk village of Melbury Green, its enchanting garden provided a fairy-tale playground of seclusion, a perfect sanctuary to hide from the tragedy which shattered her childhood. Now an adult, Saskia is still living at Ashcombe and as a book restorer devotes her days tending to the broken, battered books that find their way to her, daydreaming about the people who had once turned their pages. When she discovers a notebook carefully concealed in an old Bible - and realising someone has gone to a great deal of trouble to hide a story of their own - Saskia finds herself drawn into a heart-rending tale of wartime love.",
+      "img": "../img/romance.jpg",
+      "available": 10
+    },
+    {
+      "id": 3,
+      "book name": "Storm of the Century",
+      "author": "Stephen King",
+      "category": "Thriller",
+      "description": "This is the story of the 'Storm of the Century' on Little Tall Island, written specifically for television by Stephen King. As the devastating storm hits, Martha Clarendon dies a violent death, and Andre Linoge appears, proposing a simple deal to the community: 'If you give me what I want, I'll go away'.",
+      "img": "../img/thriller.jpg",
+      "available": 15
+    },
+    {
+      "id": 4,
+      "book name": "A Game of Thrones",
+      "author": "George R. R. Martin",
+      "category": "Science fiction",
+      "description": "Here is the first volume in George R. R. Martin’s magnificent cycle of novels that includes A Clash of Kings and A Storm of Swords. As a whole, this series comprises a genuine masterpiece of modern fantasy, bringing together the best the genre has to offer. Magic, mystery, intrigue, romance, and adventure fill these pages and transport us to a world unlike any we have ever experienced. Already hailed as a classic, George R. R. Martin’s stunning series is destined to stand as one of the great achievements of imaginative fiction.",
+      "img": "../img/sciencefiction.jpg",
+      "available": 20
+    },
+    {
+      "id": 5,
+      "book name": "La voleuse de livres",
+      "author": "Markus Zusak",
+      "category": "History",
+      "description": "Trying to make sense of the horrors of World War II, Death relates the story of Liesel--a young German girl whose book-stealing and story-telling talents help sustain her family and the Jewish man they are hiding, as well as their neighbors.",
+      "img": "../img/history.jpg",
+      "available": 25
+    }
+  ],
+  "manageBooks": [
+    {
+      "id": 1,
+      "image": "../img/history.jpg",
+      "book name": "A Brief History of Time",
+      "available": 20,
+      "date added": "1/1/2011",
+      "date expired": "2/1/2022"
+    }
+
+  ]
+}

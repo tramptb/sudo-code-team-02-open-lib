@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/manage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="icon" type="image/x-icon" href="./assets/icon-all/icon banner/logo favicon.png">
+    <link rel="icon" href="../public/favicon.ico">
+    <title>Admin manage</title>
+</head>
+<body>
+    <div class="main">
+        <section id="menu">
+            <div class="logo">
+                <a href="manage.html" >
+                    <img src="" alt="">
+                </a>
+                <h2>Library</h2>
+            </div>
+
+            <ul class="side-menu">
+                <li>
+                    <a href="#"><i class="bi bi-collection icon"></i>Management <i class="bi bi-chevron-down icon-right"></i></a>
+                    <ul class="side-dropdown">
+                        <li><a href="">Book Warehouse</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#"><i class="bi bi-shop icon"></i>Loan Magement <i class="bi bi-chevron-down icon-right"></i></a>
+                    <ul class="side-dropdown">
+                        <li><a href="">Borrowing books</a></li>
+                        <li><a href="">Returning books</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="interface">
+            <div class="navigation">
+                <div class="search-info">
+                    <div>
+                        <i id="menu-btn" class="bi bi-list"></i>
+                    </div>
+                    <div class="search">
+                        <i class="bi bi-search"></i>
+                        <input type="text" placeholder="Search">
+                    </div>
+                </div>
+
+                <div class="profile">
+                    <i class="bi bi-bell"></i>
+                    <img src="../img/profile.png" alt="" onclick="toggleMenu()">
+                </div>
+
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="../img/profile.png" alt="">
+                            <h3>Admin</h3>
+                        </div>
+                        <hr>
+
+                        <div class="log-out">
+                            <a href="" class="sub-menu-link">Logout </a>
+                            <i class="bi bi-chevron-right chev-icon"></i>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+            <dir class="board">
+                <table width="100%" id="render">
+                    <thead class="info-book">
+                        <tr>
+                            <td>ID</td>
+                            <td></td>
+                            <td>Book Name</td>
+                            <td>Availabe</td>
+                            <td>Date Added</td>
+                            <td>Date Expired</td>
+                            <td>Action</td> 
+                            <td></td>
+                        </tr>
+                        
+                    </thead>
+
+                    <div class="header-board">
+                        
+                            <button class="add js-add">ADD</button>
+                    </div>
+    
+                    <tbody>
+                </table>
+            </dir>
+        </section>
+
+        <div class="modal">
+            <div class="modal-container">
+                <div class="modal-close js-modal-close">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <header class="modal-header">
+                    Add Book
+                </header>
+
+                <div class="modal-body">
+                    <label for="">Image's Book</label>
+                    <input name="imageBook" type="file" id="file" class="modal-input" accept="image/*" hidden>
+                    <div class="img-area">
+                        <i class="bi bi-upload upload-icon"></i>
+                        <h3>Upload image</h3>
+                    </div>
+                    
+                    <div class="img-button">
+                        <button class="select-img">Update</button>
+                    </div>
+
+                    <label for="name">Name</label>
+                    <input type="text" class="modal-input" id="name" name="name">
+                    
+    
+                    <label for="availabe">Available</label>
+                    <input type="text" class="modal-input" name="available" id="availabe">
+                    <div class="error-message"></div>
+
+                    <label for="date-added">Date added:</label>
+                    <input type="date" class="modal-input" name="date-added" id="date-added">
+                    <div class="error-message"></div>
+
+                    <label for="date-expired">Date Expired:</label>
+                    <input type="date" class="modal-input" name="date-expired" id="date-expired">
+                    <div class="error-message"></div>
+    
+                    <button class="submit" onclick="add()">SUBMIT</button>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../javascript/manage.js"></script>
+</body>
+</html>
