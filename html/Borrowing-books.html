@@ -117,120 +117,74 @@
 
         <div class="bb-table">
             <table>
-                <tr>
-                    <th><input type="checkbox"></th>
-                    <th>Book ID</th>
-                    <th>Book Name</th>
-                    <th>Author</th>
-                    <th>Category</th>
-                    <th>Quantity</th>
-                    <th>Image</th>
-                    <th>Option</th>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td>1</td>
-                    <td>Harry Potter</td>
-                    <td>J.K.Rowling</td>
-                    <td>Science Fiction</td>
-                    <td>1</td>
-                    <td><img src="../img/harry-potter.jpg" alt="Harry Potter"></td>
-                    <td>
-                        <button class="bb-btn">Return</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td>2</td>
-                    <td>Harry Potter</td>
-                    <td>J.K.Rowling</td>
-                    <td>Science Fiction</td>
-                    <td>1</td>
-                    <td><img src="../img/harry-potter.jpg" alt="Harry Potter"></td>
-                    <td>
-                        <button class="bb-btn">Return</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td>3</td>
-                    <td>Harry Potter</td>
-                    <td>J.K.Rowling</td>
-                    <td>Science Fiction</td>
-                    <td>1</td>
-                    <td><img src="../img/harry-potter.jpg" alt="Harry Potter"></td>
-                    <td>
-                        <button class="bb-btn">Return</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td>4</td>
-                    <td>Harry Potter</td>
-                    <td>J.K.Rowling</td>
-                    <td>Science Fiction</td>
-                    <td>1</td>
-                    <td><img src="../img/harry-potter.jpg" alt="Harry Potter"></td>
-                    <td>
-                        <button class="bb-btn">Return</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td>5</td>
-                    <td>Harry Potter</td>
-                    <td>J.K.Rowling</td>
-                    <td>Science Fiction</td>
-                    <td>1</td>
-                    <td><img src="../img/harry-potter.jpg" alt="Harry Potter"></td>
-                    <td>
-                        <button class="bb-btn">Return</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td>6</td>
-                    <td>Harry Potter</td>
-                    <td>J.K.Rowling</td>
-                    <td>Science Fiction</td>
-                    <td>1</td>
-                    <td><img src="../img/harry-potter.jpg" alt="Harry Potter"></td>
-                    <td>
-                        <button class="bb-btn">Return</button>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td>7</td>
-                    <td>Harry Potter</td>
-                    <td>J.K.Rowling</td>
-                    <td>Science Fiction</td>
-                    <td>1</td>
-                    <td><img src="../img/harry-potter.jpg" alt="Harry Potter"></td>
-                    <td>
-                        <button class="bb-btn">Return</button>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td>8</td>
-                    <td>Harry Potter</td>
-                    <td>J.K.Rowling</td>
-                    <td>Science Fiction</td>
-                    <td>1</td>
-                    <td><img src="../img/harry-potter.jpg" alt="Harry Potter"></td>
-                    <td>
-                        <button class="bb-btn">Return</button>
-                    </td>
-                </tr>
-
+                <thead>
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <th>Book ID</th>
+                        <th>Book Name</th>
+                        <th>Author</th>
+                        <th>Category</th>
+                        <th>Quantity</th>
+                        <th>Due date</th>
+                        <th>Option</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
             </table>
         </div>
 
+        <script>
+            // Function to generate table rows dynamically
+            function generateTableRows() {
+                var tbody = document.getElementById('table-body');
+
+                for (var i = 1; i <= 10; i++) {
+                    var row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td><input type="checkbox"></td>
+                        <td>${i}</td>
+                        <td>Harry Potter</td>
+                        <td>J.K.Rowling</td>
+                        <td>Science Fiction</td>
+                        <td>
+                            <span>
+                                <button class="bb-book-quantity-btn" type="button" name="button"
+                                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                    title="Decrease Quantity">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <input class="bb-book-quantity-input" type="number" name="name" id="quantity" value="1"
+                                    min="1" max="10" placeholder="Enter quantity">
+                                <button class="bb-book-quantity-btn" type="button" name="button"
+                                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                    title="Increase Quantity">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </span>
+                        </td>
+                        <td>
+                            <input type="date" id="start" name="trip-start" value="2024-03-22" min="2021-07-22"
+                                max="2030-12-31">
+                        </td>
+                        <td>
+                            <i class="fa-solid fa-trash-can"></i>
+                        </td>
+                    `;
+                    tbody.appendChild(row);
+                }
+            }
+            generateTableRows();
+        </script>
+
         <div class="bb-btn">
-            <button class="bb-btn">Return</button>
+            <button class="bb-btn-cancel">Cancel
+                <i class="fa-solid  fa-xmark"></i>
+            </button>
+
+            <button class="bb-btn-borrow">Borrow
+                <i class="fa-solid  fa-cart-arrow-down"></i>
+            </button>
+
         </div>
 
 
@@ -243,8 +197,6 @@
             <a href="#">5</a>
             <i class="fa-solid fa-chevron-right"></i>
         </div>
-
-
 
 
 
