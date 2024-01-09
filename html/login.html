@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="icon" type="image/x-icon" href="./assets/icon-all/icon banner/logo favicon.png">
+    <link rel="icon" href="../public/favicon.ico">
+    <title>Log in</title>
+
+</head>
+<body>
+    <div class="container">
+
+        <form class="form" onsubmit="return checkValidate()">
+            <h1>SIGN IN</h1>
+            <div class="form-control">
+                <label for="email" class="label-input">Email </label>
+                <input id="email" type="email" name="email" placeholder="Enter your email address">
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-control">
+                <label for="password" class="label-input">Password</label>
+                <input id="password" type="password" name="password" placeholder="Enter your password">
+                <i class="bi bi-eye-slash-fill show-hide"></i>
+                <span class="form-message"></span>
+            </div>
+
+            <a class="forgot-password" href="../html/resetpw.html">Forgot password</a>
+
+            <button class="btn-submit" type="submit" onclick="login()" >Sign in</button>
+            <p class="signin">Don't have an acount ? <a href="">Register</a></p>
+            <div class="social-media">
+                <p>OR</p>
+                <button class="google">
+                    <img src="../img/google.png" alt="">
+                    <p>SIGN IN WITH GOOGLE</p>
+                </button>
+            </div>
+            
+        </form>
+    </div>
+    <script src="../javascript/login.js"></script>
+    <script src="../javascript/datalogin.js"></script>
+</body>
+</html>
