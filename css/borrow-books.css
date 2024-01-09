@@ -1,0 +1,440 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+/* Header Styles */
+#rw-main-header {
+  background-color: #333;
+  color: white;
+
+  /* Add the following to make the header sticky */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.rw-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.rw-header-container a {
+  text-decoration: none;
+  color: white;
+}
+
+.rw-header-container img {
+  height: 40px; /* Adjust the height of the logo as needed */
+}
+
+/* Navigation Styles */
+#rw-main-nav {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+#rw-main-nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  display: block;
+}
+
+#rw-main-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+#rw-main-nav li {
+  position: relative;
+  margin-right: 15px;
+}
+
+#rw-main-nav a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+#rw-main-nav a:hover {
+  color: #007bff;
+}
+
+/* Submenu Styles */
+#rw-main-nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#rw-main-nav ul li:hover > ul {
+  display: flex;
+  flex-direction: column;
+}
+
+#rw-main-nav ul ul li {
+  width: 150px;
+  padding: 10px;
+  margin: 0;
+}
+
+/* User Profile Styles */
+.rw-user-profile {
+  position: relative;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  /* Add the following to make the user profile dropdown sticky */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.rw-user-profile-name {
+  margin-right: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.rw-user-profile-name span {
+  margin-right: 5px;
+}
+
+.rw-user-profile-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.rw-user-profile:hover .rw-user-profile-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.rw-user-profile-options a {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.rw-user-profile-options a:hover {
+  background-color: #555;
+}
+
+/* Search, Notification, and Cart Styles */
+#rw-search,
+#rw-noti,
+#rw-cart {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+
+#rw-search input {
+  padding: 5px;
+  margin-right: 5px;
+  width: 300px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+#rw-search button {
+  padding: 5px;
+  cursor: pointer;
+  background-color: #555;
+  color: white;
+  border: none;
+  height: 30px;
+  width: 30px;
+}
+
+#rw-search button:hover {
+  background-color: #0056b3;
+}
+
+#rw-noti a,
+#rw-cart a {
+  margin-left: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+#rw-noti:hover,
+#rw-cart:hover {
+  color: yellow;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.search {
+  margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3 {
+  color: #333;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 10px;
+}
+
+nav a.active {
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+table th {
+  background-color: #333;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.bb-title {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.bb-title h1 {
+  margin-bottom: 0;
+  color: #333;
+}
+
+.sidebar {
+  width: 25%;
+  float: left;
+  margin-right: 20px;
+}
+
+.sidebar h3 {
+  color: #333;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 8px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Styles for sort dropdowns */
+.bb-sort {
+  margin-bottom: 20px;
+}
+
+.bb-sort label {
+  margin-right: 10px;
+}
+
+.bb-sort select {
+  padding: 5px;
+  width: 150px;
+}
+
+.bb-search {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.bb-search input[type="text"] {
+  padding: 5px;
+  margin-right: 5px;
+  width: 300px;
+  height: 20px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.bb-search button {
+  padding: 8px 12px; /* Adjust padding for better button appearance */
+  background-color: #007bff; /* Blue color, you can change it as needed */
+  color: #fff; /* White text, you can change it as needed */
+  border: none;
+  border-radius: 4px; /* Add border radius for a softer look */
+  cursor: pointer;
+}
+
+.bb-breadcrumbs {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.bb-breadcrumbs a {
+  text-decoration: none;
+  color: #333;
+}
+
+.bb-breadcrumbs a:hover {
+  text-decoration: underline;
+  color: #007bff;
+}
+
+.bb-breadcrumbs i {
+  margin: 0 5px;
+}
+
+.bb-table {
+  width: 100%;
+  margin: 20px auto;
+  font-size: 14px;
+  color: #333;
+}
+
+.bb-table th {
+  background-color: #333;
+  color: #fff;
+}
+
+.bb-table tr th {
+  text-align: center;
+}
+
+.bb-table th,
+.bb-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.bb-table td {
+  text-align: center;
+}
+
+.bb-btn {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styles for the borrow button */
+.bb-btn-borrow {
+  width: 150px;
+  background-color: #007bff; /* Blue color, you can change it as needed */
+  color: #fff; /* White text, you can change it as needed */
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Styles for the shopping cart icon */
+.fa-cart-shopping {
+  font-size: 20px;
+  color: #007bff; /* Blue color, you can change it as needed */
+  margin-right: 5px;
+}
+
+.bb-book-quantity-btn {
+  display: inline-block;
+  padding: 5px;
+  margin-bottom: 15px;
+  font-size: 8px;
+  cursor: pointer;
+}
+
+.bb-book-quantity-input {
+  width: 40px;
+  height: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.bb-pagination {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.bb-pagination i {
+  margin: 0 5px;
+  color: #666;
+}
+
+.bb-pagination a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 5px;
+  color: #3498db;
+  width: 30px;
+  height: 30px;
+  line-height: 24px;
+  border: 1px solid #3498db;
+  border-radius: 50%;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.bb-pagination a:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.bb-footer {
+  margin-top: 20px;
+  padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+
+  z-index: 1;
+}

@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  font-size: 16px;
 }
 
 /* Header Styles */
@@ -197,21 +198,28 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f4f4f4;
   padding: 20px;
-  margin-bottom: 20px;
+  background-color: #f0f0f0;
 }
 
 .hp-banner-content {
   flex: 1;
+  max-width: 600px;
 }
 
 .hp-banner-content h1 {
-  font-size: 2em;
+  font-size: 2.5em;
+  color: #2c3e50; /* Dark gray color */
   margin-bottom: 10px;
 }
 
+.hp-banner-content h1:hover {
+  color: #0056b3;
+}
+
 .hp-banner-content p {
+  font-size: 1.3em;
+  color: #555; /* Slightly darker gray color */
   line-height: 1.5;
 }
 
@@ -229,8 +237,9 @@ body {
 }
 
 .hp-banner-img img {
-  width: 100%;
+  width: 600px; /* Set a fixed width, adjust as needed */
   height: auto;
+  max-width: 100%; /* Ensure the image stays responsive */
   border-radius: 8px; /* Optional: Add border-radius for a rounded corner effect */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
 }
@@ -247,15 +256,15 @@ body {
 
 /* Style for the main container */
 .slider-container {
-  max-width: 800px;
-  margin: auto;
+  max-width: 800px; /* Adjust the max-width as needed */
+  margin: 20px auto;
 }
 
 /* Style for each slider item with spacing */
 .slider-item {
   margin-right: 15px; /* Adjust the margin as needed for spacing */
   width: 100%;
-  overflow: hidden; /* Hide the overflowing image */ 
+  overflow: hidden; /* Hide the overflowing image */
 }
 
 /* Remove the right margin from the last slider item to avoid extra spacing */
@@ -282,6 +291,7 @@ body {
 
 /* Style for the selected navigation slider item */
 .slider-nav .slick-center .slider-item {
+  display: inline-block;
   opacity: 1;
   border: 2px solid #333; /* Adjust border color as needed */
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Adjust box shadow as needed */
@@ -363,4 +373,8 @@ body {
   color: #fff;
   text-align: center;
   padding: 1em;
+  z-index: 1;
+  bottom: 0;
 }
+
+

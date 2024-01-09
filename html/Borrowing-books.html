@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+
+
+    <link rel="stylesheet" href="../css/borrow-books.css">
+    <title>List of Books Being Borrowed</title>
+</head>
+
+<body>
+
+    <header id="rw-main-header">
+        <div class="rw-header-container">
+            <div class="active" href="#rw-main-header">
+                <img src="your-logo.png" alt="Your Logo">
+            </div>
+
+            <nav id="rw-main-nav">
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="rw-books.html">Category</a>
+                        <ul>
+                            <li><a href="rw-books.html">Comic</a></li>
+                            <li><a href="rw-books.html">Horror</a></li>
+                            <li><a href="rw-books.html">Romance</a></li>
+                            <li><a href="rw-books.html">Science Fiction</a></li>
+                            <li><a href="rw-books.html">Cooking</a></li>
+                            <li><a href="rw-books.html">Science</a></li>
+                            <li><a href="rw-books.html">Comics</a></li>
+                            <li><a href="rw-books.html">Art</a></li>
+                            <li><a href="rw-books.html">Journal</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="borrowing-books.html">Manage</a>
+                        <ul>
+                            <li><a href="">Borrowed</a></li>
+                            <li><a href="borrowing-books.html">Borrowing</a></li>
+                            <li><a href="rw-reserved.html">Reserved</a></li>
+                            <li><a href="rw-reviewing.html">Reviewing</a></li>
+                            <li><a href="rw-favorites.html">Favorites</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Search, User Profile, Notification, Cart -->
+
+                <div id="rw-search">
+                    <input type="text" placeholder="Search">
+                    <button type="submit" title="Search">
+                        <i class="fas fa-search"></i>
+                </div>
+
+                <div class="rw-user-profile">
+                    <div class="rw-user-profile-name">
+                        <span>User</span>
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+
+                    <div class="rw-user-profile-options">
+                        <a href="rw-profile.html">Profile</a>
+                        <a href="rw-login.html">Logout</a>
+                    </div>
+                </div>
+
+                <div id="rw-noti">
+                    <i class="fas fa-bell"></i>
+                    <a href="#" title="notification"></a>
+                </div>
+
+                <div id="rw-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <a href="#" title="cart"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="bb-container">
+        <div class="bb-title">
+            <h1>List of Books Being Borrowed</h1>
+        </div>
+
+        <div class="bb-breadcrumbs">
+            <a href="homepage.html">Home</a>
+            <i class="fa-solid fa-chevron-right fa-sm"></i>
+            <a href="borrowing-books.html">Manage</a>
+            <i class="fa-solid fa-chevron-right fa-sm"></i>
+            <a href="borrowing-books.html">Borrowed</a>
+        </div>
+
+        <div class="bb-search">
+            <input type="text" placeholder="Search">
+            <button type="submit" title="Search">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+
+        <div class="bb-sort">
+            <label for="bb-sort">Sort by:</label>
+            <select name="bb-sort" id="bb-sort">
+                <option value="bb-sort">Name</option>
+                <option value="bb-sort">Author</option>
+                <option value="bb-sort">Category</option>
+                <option value="bb-sort">Quantity</option>
+            </select>
+        </div>
+
+
+
+        <div class="bb-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <th>Book ID</th>
+                        <th>Book Name</th>
+                        <th>Author</th>
+                        <th>Category</th>
+                        <th>Quantity</th>
+                        <th>Due date</th>
+                        <th>Option</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+            </table>
+        </div>
+
+
+   
+        <script>
+            // Function to generate table rows dynamically
+            function generateTableRows() {
+                var tbody = document.getElementById('table-body');
+
+                for (var i = 1; i <= 10; i++) {
+                    var row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td><input type="checkbox"></td>
+                        <td>${i}</td>
+                        <td>Harry Potter</td>
+                        <td>J.K.Rowling</td>
+                        <td>Science Fiction</td>
+                        <td>
+                            <span>
+                                <button class="bb-book-quantity-btn" type="button" name="button"
+                                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                    title="Decrease Quantity">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <input class="bb-book-quantity-input" type="number" name="name" id="quantity" value="1"
+                                    min="1" max="10" placeholder="Enter quantity">
+                                <button class="bb-book-quantity-btn" type="button" name="button"
+                                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                    title="Increase Quantity">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </span>
+                        </td>
+                        <td>
+                            <input type="date" id="start" name="trip-start" value="2024-03-22" min="2021-07-22"
+                                max="2030-12-31">
+                        </td>
+                        <td>
+                            <i class="fa-solid fa-trash-can"></i>
+                        </td>
+                    `;
+                    tbody.appendChild(row);
+                }
+            }
+            generateTableRows();
+        </script>
+
+
+
+     
+
+        <div class="bb-btn">
+            <button class="bb-btn-borrow">Borrow
+                <i class="fa-solid  fa-cart-arrow-down"></i>
+            </button>
+
+        </div>
+
+
+        <div class="bb-pagination">
+            <i class="fa-solid fa-chevron-left"></i>
+            <a href="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a class="#" href="#">4</a>
+            <a href="#">5</a>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+
+
+
+    </div>
+
+    <footer class="bb-footer">
+        <p>&copy; 2023 Your Library Name. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
