@@ -1,55 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Open libiary</title>
+    <title>OpenLib</title>
     <link rel="icon" href="public/favicon.ico">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
 
-  </head>
-  <body>
-    <div class="container">
-        <header class="header">
-            <ul class="header__nav">
-                <li>Home</li>
-                <li>My books</li>
-                <li>Contribute</li>
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Include Slick carousel CSS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <link rel="stylesheet" href="css/homepage.css">
+
+</head>
+<body>
+<header id="rw-main-header">
+    <div class="rw-header-container">
+        <div class="header-brand">
+            <img src="public/images/header-logo.png" alt="OpenLib Logo" id="headerLogo" class="header-brand-logo">
+            <span class="header-brand-text">OpenLib</span>
+        </div>
+
+        <nav id="rw-main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html/reviewing-books.html">Category</a>
+                    <ul>
+                        <li><a href="html/reviewing-books.html">Comic</a></li>
+                        <li><a href="html/reviewing-books.html">Horror</a></li>
+                        <li><a href="html/reviewing-books.html">Romance</a></li>
+                        <li><a href="html/reviewing-books.html">Science Fiction</a></li>
+                        <li><a href="html/reviewing-books.html">Cooking</a></li>
+                        <li><a href="html/reviewing-books.html">Science</a></li>
+                        <li><a href="html/reviewing-books.html">Comics</a></li>
+                        <li><a href="html/reviewing-books.html">Art</a></li>
+                        <li><a href="html/reviewing-books.html">Journal</a></li>
+                    </ul>
+                </li>
+                <li><a href="html/borrowing-books.html">Manage</a>
+                    <ul>
+                        <li><a href="html/borrowing-books.html">Borrowed</a></li>
+                        <li><a href="rw-borrowing.html">Borrowing</a></li>
+                        <li><a href="rw-borrowing.html">Contribute</a></li>
+                        <li><a href="rw-reserved.html">Reserved</a></li>
+                        <li><a href="rw-reviewing.html">Reviewing</a></li>
+                        <li><a href="rw-favorites.html">Favorites</a></li>
+                    </ul>
+                </li>
             </ul>
-    
-            <div class="header__search">
-                <select id="searchType">
-                    <option value="all">All</option>
-                    <option value="author">Author</option>
-                    <option value="bookname">Book Name</option>
-                    <option value="category">Category</option>
-                    <option value="keyword">Keyword</option>
-                </select>
-                <input type="text" id="search">
-                <button onclick="searchBook()"><i class="bi bi-search icon"></i></button>
+        </nav>
+
+        <div class="header-extensions">
+            <!-- Search, User Profile, Cart -->
+            <div id="rw-search">
+                <input type="search" placeholder="Search" title="Search" value="">
             </div>
-    
-            <ul class="header__icon">
-                <li><i class="bi bi-bag icon"></i></li>
-                <li><i class="bi bi-person icon"></i></li>
-                
-            </ul>
-        </header>
 
+            <div id="rw-login">
+                <a href="html/login.html">Login</a>
+            </div>
+
+            <div class="rw-user-profile">
+                <div class="rw-user-profile-name">
+                    <span>User</span>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+
+                <div class="rw-user-profile-options">
+                    <a href="rw-profile.html">Profile</a>
+                    <a href="rw-login.html">Logout</a>
+                </div>
+            </div>
+
+
+            <div id="rw-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <a href="#" title="cart"></a>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+<section class="hp-banner-section">
+    <div class="hp-banner-wrapper">
+        <div class="hp-banner-content">
+            <h1>OpenLib</h1>
+            <p>OpenLib is a website that provides a wide range of books for readers to choose from. Readers
+                can borrow books, review books, and rate books. Readers can also see the top rated books and the
+                top borrowed books.
+            </p>
+        </div>
+
+        <img src="https://i.pinimg.com/originals/42/88/b0/4288b0367a47ca15e89aeab9862717c8.gif" alt="banner"
+             class="hp-banner-img">
+    </div>
+
+</section>
+
+<main class="hp-main-content">
+    <!-- Slider Section -->
+    <section class="slider-container">
+        <div class="slider-for" id="sliderHomepageBanner">
+            <div class="slider-item">
+                <img src="https://m.media-amazon.com/images/I/91Sy3S-198L._AC_UL480_FMwebp_QL65_.jpg" alt="book1">
+            </div>
+
+            <div class="slider-item">
+                <img src="https://m.media-amazon.com/images/I/71cpL5zOtBL._AC_UL960_FMwebp_QL65_.jpg" alt="book2">
+            </div>
+
+            <div class="slider-item">
+                <img src="https://m.media-amazon.com/images/I/81999o0oq+L._AC_UL480_FMwebp_QL65_.jpg" alt="book3">
+            </div>
+
+            <div class="slider-item">
+                <img src="https://m.media-amazon.com/images/I/81pOIaiJRUL._AC_UL480_FMwebp_QL65_.jpg" alt="book4">
+            </div>
+
+            <div class="slider-item">
+                <img src="https://m.media-amazon.com/images/I/81pF6fAUOOL._SL1500_.jpg" alt="book5">
+            </div>
+
+            <div class="slider-item">
+                <img src="https://m.media-amazon.com/images/I/91lOIcyFBiL._SL1500_.jpg" alt="book6">
+            </div>
+        </div>
+
+        <div class="slider-nav">
+            <div class="slider-item">
+                <img src="https://m.media-amazon.com/images/I/91Sy3S-198L._AC_UL480_FMwebp_QL65_.jpg" alt="book1">
+            </div>
+
+            <div class="slider-item">
+                <img src="https://m.media-amazon.com/images/I/71cpL5zOtBL._AC_UL960_FMwebp_QL65_.jpg" alt="book2">
+            </div>
+
+            <div class="slider-item">
+                <img src="https://m.media-amazon.com/images/I/81999o0oq+L._AC_UL480_FMwebp_QL65_.jpg" alt="book3">
+            </div>
+
+            <div class="slider-item">
+                <img src="https://m.media-amazon.com/images/I/81pOIaiJRUL._AC_UL480_FMwebp_QL65_.jpg" alt="book4">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- New Release Section -->
+    <div class="hp-new-release">
+        <div class="hp-new-release-title">
+            <h2>New Release</h2>
+            <a href="html/reviewing-books.html">View All</a>
+        </div>
+
+        <div class="hp-new-release-content">
+            <a class="hp-new-release-book" href="html/reviewing-books.html">
+                <div class="hp-new-release-book-img">
+                    <img src="https://m.media-amazon.com/images/I/91lOIcyFBiL._SL1500_.jpg" alt="book1">
+                </div>
+
+                <div class="hp-new-release-book-info">
+                    <h3>Book Title</h3>
+                    <p>Author</p>
+                    <p>Category</p>
+                    <p>Release Date</p>
+                    <p>Rating</p>
+                </div>
+            </a>
+
+            <a class="hp-new-release-book" href="html/reviewing-books.html">
+                <div class="hp-new-release-book-img">
+                    <img src="https://m.media-amazon.com/images/I/81pF6fAUOOL._SL1500_.jpg" alt="book2">
+                </div>
+
+                <div class="hp-new-release-book-info">
+                    <h3>Book Title</h3>
+                    <p>Author</p>
+                    <p>Category</p>
+                    <p>Release Date</p>
+                    <p>Rating</p>
+                </div>
+            </a>
+
+            <a class="hp-new-release-book" href="html/reviewing-books.html">
+                <div class="hp-new-release-book-img">
+                    <img src="https://m.media-amazon.com/images/I/81pOIaiJRUL._AC_UL480_FMwebp_QL65_.jpg"
+                         alt="book3">
+                </div>
+
+                <div class="hp-new-release-book-info">
+                    <h3>Book Title</h3>
+                    <p>Author</p>
+                    <p>Category</p>
+                    <p>Release Date</p>
+                    <p>Rating</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Top Rated Section -->
+    <div class="hp-top-rated">
+        <div class="hp-top-rated-title">
+            <h2>Top Rated</h2>
+            <a href="html/reviewing-books.html">View All</a>
+        </div>
+
+        <div class="hp-top-rated-content">
+            <a class="hp-top-rated-book" href="html/reviewing-books.html">
+                <div class="hp-top-rated-book-img">
+                    <img src="https://m.media-amazon.com/images/I/91Sy3S-198L._AC_UL480_FMwebp_QL65_.jpg"
+                         alt="book1">
+                </div>
+
+                <div class="hp-top-rated-book-info">
+                    <h3>Book Title</h3>
+                    <p>Author</p>
+                    <p>Category</p>
+                    <p>Release Date</p>
+                    <p>Rating</p>
+                </div>
+            </a>
+
+            <a class="hp-top-rated-book" href="html/reviewing-books.html">
+                <div class="hp-top-rated-book-img">
+                    <img src="https://m.media-amazon.com/images/I/71cpL5zOtBL._AC_UL960_FMwebp_QL65_.jpg"
+                         alt="book2">
+                </div>
+
+                <div class="hp-top-rated-book-info">
+                    <h3>Book Title</h3>
+                    <p>Author</p>
+                    <p>Category</p>
+                    <p>Release Date</p>
+                    <p>Rating</p>
+                </div>
+            </a>
+
+            <a class="hp-top-rated-book" href="html/reviewing-books.html">
+                <div class="hp-top-rated-book-img">
+                    <img src="https://m.media-amazon.com/images/I/81999o0oq+L._AC_UL480_FMwebp_QL65_.jpg"
+                         alt="book3">
+                </div>
+
+                <div class="hp-top-rated-book-info">
+                    <h3>Book Title</h3>
+                    <p>Author</p>
+                    <p>Category</p>
+                    <p>Release Date</p>
+                    <p>Rating</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Top Borrowed Section -->
+    <div class="hp-top-borrowed">
+        <div class="hp-top-borrowed-title">
+            <h2>Top Borrowed</h2>
+            <a href="html/reviewing-books.html">View All</a>
+        </div>
+
+        <div class="hp-top-borrowed-content">
+            <a class="hp-top-borrowed-book" href="html/reviewing-books.html">
+                <div class="hp-top-borrowed-book-img">
+                    <img src="https://m.media-amazon.com/images/I/811nPTHOsgL._AC_UL480_FMwebp_QL65_.jpg"
+                         alt="book1">
+                </div>
+
+                <div class="hp-top-borrowed-book-info">
+                    <h3>Book Title</h3>
+                    <p>Author</p>
+                    <p>Category</p>
+                </div>
+            </a>
+
+            <a class="hp-top-borrowed-book" href="html/reviewing-books.html">
+                <div class="hp-top-borrowed-book-img">
+                    <img src="https://m.media-amazon.com/images/I/71V2hgUlf+L._AC_UL480_FMwebp_QL65_.jpg"
+                         alt="book2">
+                </div>
+
+                <div class="hp-top-borrowed-book-info">
+                    <h3>Book Title</h3>
+                    <p>Author</p>
+                    <p>Category</p>
+                </div>
+            </a>
+
+            <a class="hp-top-borrowed-book" href="html/reviewing-books.html">
+                <div class="hp-top-borrowed-book-img">
+                    <img src="https://m.media-amazon.com/images/I/81XWWgotqvL._AC_UL480_FMwebp_QL65_.jpg"
+                         alt="book3">
+                </div>
+
+                <div class="hp-top-borrowed-book-info">
+                    <h3>Book Title</h3>
+                    <p>Author</p>
+                    <p>Category</p>
+                </div>
+            </a>
+        </div>
     </div>
 
 
+    <script>
+        // Navigation Slider
+        $('.slider-nav').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            arrows: true,
+            dots: true,
+            centerMode: true,
+            focusOnSelect: true,
+            autoplay: true,  // Consider removing autoplay here
+            autoplaySpeed: 3000,
+        });
 
-    
+        // Slider
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav',
+            autoplay: true,  // Consider removing autoplay here
+            autoplaySpeed: 3000,
+        });
+
+    </script>
+
+</main>
+
+<footer class="rw-footer">
+    <p>&copy; 2023 Your Library Name. All rights reserved.</p>
+</footer>
 
 
-    <script src="./javascript/index.js"></script>
+<script src="./javascript/index.js"></script>
 
-    
 
-  
-  </body>
+</body>
 </html>

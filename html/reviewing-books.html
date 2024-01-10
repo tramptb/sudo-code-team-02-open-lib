@@ -3,7 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../public/favicon.ico">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
@@ -25,44 +29,45 @@
 
     <header id="rw-main-header">
         <div class="rw-header-container">
-            <div class="active" href="#rw-main-header">
-                <img src="your-logo.png" alt="Your Logo">
+            <div class="header-brand">
+                <img src="../public/images/header-logo.png" alt="OpenLib Logo" id="headerLogo"
+                    class="header-brand-logo">
+                <span class="header-brand-text">OpenLib</span>
             </div>
 
             <nav id="rw-main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="rw-books.html">Category</a>
+                    <li><a href="html/reviewing-books.html">Category</a>
                         <ul>
-                            <li><a href="rw-books.html">Comic</a></li>
-                            <li><a href="rw-books.html">Horror</a></li>
-                            <li><a href="rw-books.html">Romance</a></li>
-                            <li><a href="rw-books.html">Science Fiction</a></li>
-                            <li><a href="rw-books.html">Cooking</a></li>
-                            <li><a href="rw-books.html">Science</a></li>
-                            <li><a href="rw-books.html">Comics</a></li>
-                            <li><a href="rw-books.html">Art</a></li>
-                            <li><a href="rw-books.html">Journal</a></li>
+                            <li><a href="html/reviewing-books.html">Comic</a></li>
+                            <li><a href="html/reviewing-books.html">Horror</a></li>
+                            <li><a href="html/reviewing-books.html">Romance</a></li>
+                            <li><a href="html/reviewing-books.html">Science Fiction</a></li>
+                            <li><a href="html/reviewing-books.html">Cooking</a></li>
+                            <li><a href="html/reviewing-books.html">Science</a></li>
+                            <li><a href="html/reviewing-books.html">Comics</a></li>
+                            <li><a href="html/reviewing-books.html">Art</a></li>
+                            <li><a href="html/reviewing-books.html">Journal</a></li>
                         </ul>
                     </li>
-                    <li><a href="rw-borrowed.html">Manage</a>
+                    <li><a href="html/borrowing-books.html">Manage</a>
                         <ul>
-                            <li><a href="rw-borrowed.html">Borrowed</a></li>
+                            <li><a href="html/borrowing-books.html">Borrowed</a></li>
                             <li><a href="rw-borrowing.html">Borrowing</a></li>
+                            <li><a href="rw-borrowing.html">Contribute</a></li>
                             <li><a href="rw-reserved.html">Reserved</a></li>
                             <li><a href="rw-reviewing.html">Reviewing</a></li>
                             <li><a href="rw-favorites.html">Favorites</a></li>
                         </ul>
                     </li>
                 </ul>
+            </nav>
 
-                <!-- Search, User Profile, Notification, Cart -->
-
+            <div class="header-extensions">
+                <!-- Search, User Profile, Cart -->
                 <div id="rw-search">
-                    <input type="text" placeholder="Search">
-                    <button type="submit" title="Search">
-                        <i class="fas fa-search"></i>
-                    </button>
+                    <input type="search" placeholder="Search" title="Search" value="">
                 </div>
 
                 <div class="rw-user-profile">
@@ -77,21 +82,17 @@
                     </div>
                 </div>
 
-                <div id="rw-noti">
-                    <i class="fas fa-bell"></i>
-                    <a href="#" title="notification"></a>
-                </div>
 
                 <div id="rw-cart">
                     <i class="fas fa-shopping-cart"></i>
                     <a href="#" title="cart"></a>
                 </div>
-            </nav>
+            </div>
         </div>
 
     </header>
 
-    <div class="rw-container">
+    <main class="rw-container">
 
         <div class="rw-breadcrumb">
             <a href="index.html">Home</a>
@@ -350,9 +351,6 @@
         </section>
 
 
-
-
-
         <!-- Write script to make the book cover images slide vertically -->
         <script>
             $(document).ready(function () {
@@ -371,11 +369,12 @@
             });
         </script>
 
-    </div>
+    </main>
 
     <footer class="rw-footer">
         <p>&copy; 2023 Your Library Name. All rights reserved.</p>
     </footer>
+
 </body>
 
 </html>
