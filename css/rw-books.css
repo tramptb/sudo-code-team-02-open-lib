@@ -5,7 +5,6 @@
   padding: 0 20px;
 }
 
-
 .rw-breadcrumb {
   display: flex;
   align-items: center;
@@ -36,7 +35,6 @@
   justify-content: space-between;
   margin-bottom: 20px;
 }
-
 
 .rw-book-container {
   display: flex;
@@ -172,7 +170,7 @@
   background-clip: padding-box;
   border: 1px solid var(--bs-border-color);
   border-radius: var(--bs-border-radius);
-  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .rw-book-quantity button {
@@ -209,7 +207,8 @@
   padding: 10px;
 }
 
-.rw-borrow-overview, .rw-borrow-overview-rating {
+.rw-borrow-overview,
+.rw-borrow-overview-rating {
   display: flex;
   align-items: center;
   padding: 10px;
@@ -222,7 +221,6 @@
   background-color: #fff;
   border-radius: 4px;
 }
-
 
 .rw-borrow-overview i {
   color: #f1c40f;
@@ -323,6 +321,47 @@ hr {
   color: #fff;
 }
 
+.book-review-section {
+  width: 100%;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: none;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(30, 100, 200);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: rgb(30, 100, 250);
+}
 
 /* .rw-pagination a,
 .rw-pagination span {
