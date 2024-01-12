@@ -328,6 +328,7 @@ input[type="date"]{
   padding-right: 16px;
 }
 
+
 /* Popup styling */
 .popup {
   display: none;
@@ -335,15 +336,20 @@ input[type="date"]{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  background-color: #f8f9fa; /* Light background color */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
   z-index: 1000;
-  border-radius: 10px;
+  border-radius: 12px;
   max-width: 400px;
-  width: 80%;
+  width: 90%;
   text-align: center;
+  color: #333; /* Text color */
+  font-size: 18px;
+  font-weight: 500;
 }
+
+
 
 /* Overlay styling */
 .overlay {
@@ -365,6 +371,11 @@ input[type="date"]{
   right: 15px;
   font-size: 24px;
   color: #333;
+}
+
+
+.close-btn:hover {
+  color: #555;
 }
 
 .close-btn:hover {
