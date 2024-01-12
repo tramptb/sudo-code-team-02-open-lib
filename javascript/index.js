@@ -1,5 +1,15 @@
 
 document.addEventListener('DOMContentLoaded', () => {
+    const textbox = document.getElementById("rwSearchKeyword");
+    textbox.addEventListener("keypress", function onEvent(event) {
+        if (event.key === "Enter") {
+            // const host = window.location.host;
+            // const pathname = "/html/search.html";
+
+            window.location.href = 'https://master--sensational-faloodeh-347842.netlify.app/html/search.html';
+        }
+    });
+
 });
 
 
