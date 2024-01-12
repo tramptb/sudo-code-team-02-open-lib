@@ -160,8 +160,17 @@
 .hp-new-release-book-info, .hp-top-rated-book-info, .hp-top-borrowed-book-info{
     display: flex;
     flex-direction: column;
+    text-align: center;
+
     align-items: center;
     color: var(--bs-body-color);
+}
+
+.hp-new-release-book-info h3, .hp-top-rated-book-info h3, .hp-top-borrowed-book-info h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: rebeccapurple;
 }
 
 .hp-new-release-book,
