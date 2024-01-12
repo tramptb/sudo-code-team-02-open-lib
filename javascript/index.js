@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     textbox.addEventListener("keypress", function onEvent(event) {
         if (event.key === "Enter") {
             const host = window.location.host;
-            const pathname = "./html/search.html";
+            const pathname = "/html/search.html";
 
             window.location.href = host + pathname;
         }
