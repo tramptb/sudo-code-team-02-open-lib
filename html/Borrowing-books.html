@@ -130,49 +130,47 @@
             </table>
         </div>
 
-        <script>
-            // Function to generate table rows dynamically
-            function generateTableRows() {
-                var tbody = document.getElementById('table-body');
+            <script>
+                // Function to generate table rows dynamically
+                function generateTableRows() {
+                    var tbody = document.getElementById('table-body');
 
-                for (var i = 1; i <= 10; i++) {
-                    var row = document.createElement('tr');
-                    row.innerHTML = `
-                            <td><input type="checkbox"></td>
-                            <td>${i}</td>
-                            <td>Harry Potter</td>
-                            <td>J.K.Rowling</td>
-                            <td>Science Fiction</td>
-                            <td>
-                                <span>
-                                    <button class="bb-book-quantity-btn" type="button" name="button"
-                                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                                        title="Decrease Quantity">
-                                        <i class="fas fa-minus"></i>
-                                    </button>
-                                    <input class="bb-book-quantity-input" type="number" name="name" id="quantity" value="1"
-                                        min="1" max="10" placeholder="Enter quantity">
-                                    <button class="bb-book-quantity-btn" type="button" name="button"
-                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                        title="Increase Quantity">
-                                        <i class="fas fa-plus"></i>
-                                    </button>
-                                </span>
-                            </td>
-                            <td>
-                                <input type="date" id="start" name="trip-start" value="2024-03-22" min="2021-07-22"
-                                    max="2030-12-31">
-                            </td>
-                            <td>
-                                <i class="fa-solid fa-trash-can"></i>
-                            </td>
-                        `;
-                    tbody.appendChild(row);
+                    for (var i = 1; i <= 10; i++) {
+                        var row = document.createElement('tr');
+                        row.innerHTML = `
+                                <td><input type="checkbox"></td>
+                                <td>${i}</td>
+                                <td>Harry Potter</td>
+                                <td>J.K.Rowling</td>
+                                <td>Science Fiction</td>
+                                <td>
+                                    <span>
+                                        <button class="bb-book-quantity-btn" type="button" name="button"
+                                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                            title="Decrease Quantity">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                        <input class="bb-book-quantity-input" type="number" name="name" id="quantity" value="1"
+                                            min="1" max="10" placeholder="Enter quantity">
+                                        <button class="bb-book-quantity-btn" type="button" name="button"
+                                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                            title="Increase Quantity">
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                    </span>
+                                </td>
+                                <td>
+                                    <input type="date" id="start" name="trip-start" value="2024-03-22" min="2021-07-22"
+                                        max="2030-12-31">
+                                </td>
+                                <td>
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </td>
+                            `;
+                        tbody.appendChild(row);
+                    }
                 }
-            }
-
-            generateTableRows();
-        </script>
+            </script>
 
         <div class="overlay" id="overlay"></div>
         <div class="popup" id="popup">
@@ -184,8 +182,8 @@
         </div>
 
         <div class="bb-btn">
-            <button class="bb-btn-borrow">Borrow
-                <i class="fa-solid  fa-cart-arrow-down"></i>
+            <button class="bb-btn-borrow" onclick="handleBorrowClick()">Borrow
+                <i class="fa-solid fa-cart-arrow-down"></i>
             </button>
         </div>
 
