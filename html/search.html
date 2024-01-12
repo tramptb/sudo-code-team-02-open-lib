@@ -1,44 +1,273 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/search.css">
-    <title>Search Results</title>
-    
+    <title>OpenLib Search</title>
+    <link rel="icon" href="../public/favicon.ico">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/search.css">
+
 </head>
 
 <body>
-    <div class="container">
-        <section class="detail">
-            
-        </section>
+<header id="rw-main-header">
+    <div class="rw-header-container">
+        <div class="header-brand">
+            <img src="../public/images/header-logo.png" alt="OpenLib Logo" id="headerLogo" class="header-brand-logo">
+            <span class="header-brand-text">OpenLib</span>
+        </div>
 
-        <script>
-            const urlParams = new URLSearchParams(window.location.search);
-            const search = urlParams.get('search');
-            const type = urlParams.get('type');
-            const results = JSON.parse(urlParams.get('results'));
+        <nav id="rw-main-nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="/html/reviewing-books.html">Category</a>
+                    <ul>
+                        <li><a href="/html/reviewing-books.html">Comic</a></li>
+                        <li><a href="/html/reviewing-books.html">Horror</a></li>
+                        <li><a href="/html/reviewing-books.html">Romance</a></li>
+                        <li><a href="/html/reviewing-books.html">Science Fiction</a></li>
+                        <li><a href="/html/reviewing-books.html">Cooking</a></li>
+                        <li><a href="/html/reviewing-books.html">Science</a></li>
+                        <li><a href="/html/reviewing-books.html">Comics</a></li>
+                        <li><a href="/html/reviewing-books.html">Art</a></li>
+                        <li><a href="/html/reviewing-books.html">Journal</a></li>
+                    </ul>
+                </li>
+                <li><a href="/html/reviewing-books.html">Manage</a>
+                    <ul>
+                        <li><a href="/html/reviewing-books.html">Borrowed</a></li>
+                        <li><a href="/html/reviewing-books.html">Borrowing</a></li>
+                        <li><a href="/html/contributting-form.html">Contribute</a></li>
+                        <li><a href="/html/rw-reserved.html">Reserved</a></li>
+                        <li><a href="/html/reviewing-books.html">Reviewing</a></li>
+                        <li><a href="/html/rw-favorites.html">Favorites</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
 
-            
-            document.querySelector(".detail").innerHTML = '';
-            let book = '';
-            results.forEach(value => {
-                book += `
-                    <div class="detail__prd">
-                        <img src="${value.img}">
-                        <div class="detail__prd-des">
-                        <h4>${value['book name']}</h4>
-                        <p>${value.author}</p>
-                        <div>
-                            <button class="borrow">Borrow</button>  
-                    </div>
-                `;
-            });
+        <div class="header-extensions">
+            <!-- Search, User Profile, Cart -->
+            <div id="rw-search">
+                <input type="search" placeholder="Search" title="Search" value="">
+            </div>
 
-            document.querySelector(".detail").innerHTML = book;
-        </script>
+            <div id="rw-login">
+                <a href="html/login.html">Login</a>
+            </div>
+
+            <div class="rw-user-profile">
+                <div class="rw-user-profile-name">
+                    <span>User</span>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+
+                <div class="rw-user-profile-options">
+                    <a href="rw-profile.html">Profile</a>
+                    <a href="rw-login.html">Logout</a>
+                </div>
+            </div>
+
+
+            <div id="rw-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <a href="#" title="cart"></a>
+            </div>
+        </div>
     </div>
+
+</header>
+
+<section class="hp-banner-section">
+    <div class="hp-banner-wrapper container">
+        <div class="hp-banner-content">
+            <h1 class="hp-banner-title">Ready to take a book?</h1>
+            <div class="sb-search-wrapper">
+                <div class="sb-search-item sb-search-keyword">
+                    <label for="inputState" class="form-label">Search by</label>
+                    <input type="text" placeholder="Enter by book name, author name..." title="Search"
+                           class="form-control">
+                </div>
+
+                <div class="sb-search-item sb-search-categories">
+                    <label for="inputState" class="form-label">Genre</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>All</option>
+                        <option value="comic">Comic</option>
+                        <option value="html/reviewing-books.html">Horror</option>
+                        <option value="html/reviewing-books.html">Romance</option>
+                        <option value="html/reviewing-books.html">Science Fiction</option>
+                        <option value="html/reviewing-books.html">Cooking</option>
+                        <option value="html/reviewing-books.html">Science</option>
+                        <option value="html/reviewing-books.html">Comics</option>
+                        <option value="html/reviewing-books.html">Art</option>
+                        <option value="html/reviewing-books.html">Journal</option>
+                    </select>
+                </div>
+
+                <div class="sb-search-item sb-search-btn">
+                    <div class="label-btn-search form-label">&nbsp;</div>
+                    <button type="submit" title="Search" class="btn btn-primary">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <img src="../img/banner-search-page.png" alt="banner"
+             class="hp-banner-img">
+    </div>
+
+</section>
+<section class="hp-new-release container">
+    <div class="hp-new-release-title">
+        <h2>Search results</h2>
+    </div>
+
+    <div class="hp-new-release-content">
+        <div class="hp-new-release-book">
+            <div class="hp-new-release-book-img">
+                <img src="https://m.media-amazon.com/images/I/91lOIcyFBiL._SL1500_.jpg" alt="book1">
+            </div>
+
+            <div class="hp-new-release-book-info">
+                <h3>Book Title</h3>
+                <p>Author</p>
+                <p>Category</p>
+                <p>Release Date</p>
+                <p>Quantity</p>
+                <p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </p>
+                <a href="reviewing-books.html" class="btn btn-primary btn-borrow">Borrow</a>
+            </div>
+        </div>
+
+        <div class="hp-new-release-book">
+            <div class="hp-new-release-book-img">
+                <img src="https://m.media-amazon.com/images/I/81pF6fAUOOL._SL1500_.jpg" alt="book2">
+            </div>
+
+            <div class="hp-new-release-book-info">
+                <h3>Book Title</h3>
+                <p>Author</p>
+                <p>Category</p>
+                <p>Release Date</p>
+                <p>Quantity</p>
+                <p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </p>
+                <a href="reviewing-books.html" class="btn btn-primary btn-borrow">Borrow</a>
+            </div>
+        </div>
+
+        <div class="hp-new-release-book">
+            <div class="hp-new-release-book-img">
+                <img src="https://m.media-amazon.com/images/I/81pOIaiJRUL._AC_UL480_FMwebp_QL65_.jpg"
+                     alt="book3">
+            </div>
+
+            <div class="hp-new-release-book-info">
+                <h3>Book Title</h3>
+                <p>Author</p>
+                <p>Category</p>
+                <p>Release Date</p>
+                <p>Quantity</p>
+                <p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </p>
+                <a href="reviewing-books.html" class="btn btn-primary btn-borrow">Borrow</a>
+            </div>
+        </div>
+        <div class="hp-new-release-book">
+            <div class="hp-new-release-book-img">
+                <img src="https://m.media-amazon.com/images/I/91lOIcyFBiL._SL1500_.jpg" alt="book1">
+            </div>
+
+            <div class="hp-new-release-book-info">
+                <h3>Book Title</h3>
+                <p>Author</p>
+                <p>Category</p>
+                <p>Release Date</p>
+                <p>Quantity</p>
+                <p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </p>
+                <a href="reviewing-books.html" class="btn btn-primary btn-borrow">Borrow</a>
+            </div>
+        </div>
+
+        <div class="hp-new-release-book">
+            <div class="hp-new-release-book-img">
+                <img src="https://m.media-amazon.com/images/I/81pF6fAUOOL._SL1500_.jpg" alt="book2">
+            </div>
+
+            <div class="hp-new-release-book-info">
+                <h3>Book Title</h3>
+                <p>Author</p>
+                <p>Category</p>
+                <p>Release Date</p>
+                <p>Quantity</p>
+                <p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </p>
+                <a href="reviewing-books.html" class="btn btn-primary btn-borrow">Borrow</a>
+            </div>
+        </div>
+
+        <div class="hp-new-release-book">
+            <div class="hp-new-release-book-img">
+                <img src="https://m.media-amazon.com/images/I/81pOIaiJRUL._AC_UL480_FMwebp_QL65_.jpg"
+                     alt="book3">
+            </div>
+
+            <div class="hp-new-release-book-info">
+                <h3>Book Title</h3>
+                <p>Author</p>
+                <p>Category</p>
+                <p>Release Date</p>
+                <p>Quantity</p>
+                <p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </p>
+                <a href="reviewing-books.html" class="btn btn-primary btn-borrow">Borrow</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="rw-footer">
+    <p>&copy; 2023 Your Library Name. All rights reserved.</p>
+</footer>
 </body>
 </html>

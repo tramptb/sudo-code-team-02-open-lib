@@ -33,7 +33,7 @@
 
         <nav id="rw-main-nav">
             <ul>
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="html/reviewing-books.html">Category</a>
                     <ul>
                         <li><a href="html/reviewing-books.html">Comic</a></li>
@@ -63,7 +63,7 @@
         <div class="header-extensions">
             <!-- Search, User Profile, Cart -->
             <div id="rw-search">
-                <input type="search" placeholder="Search" title="Search" value="">
+                <input type="search" placeholder="Search" title="Search" value="" id="rwSearchKeyword">
             </div>
 
             <div id="rw-login">
@@ -100,73 +100,25 @@
                 can borrow books, review books, and rate books. Readers can also see the top rated books and the
                 top borrowed books.
             </p>
+            <a role="button" href="./html/search.html" class="btn btn-primary">Explore now</a>
         </div>
 
-        <img src="https://i.pinimg.com/originals/42/88/b0/4288b0367a47ca15e89aeab9862717c8.gif" alt="banner"
+        <img src="https://images.contentstack.io/v3/assets/blt3d151d94546d0edd/blta0ddc4ade376f2e0/655683f7647c2865014e961c/LibbyDevices2023.png" alt="banner"
              class="hp-banner-img">
     </div>
 
 </section>
 
 <main class="hp-main-content">
-    <!-- Slider Section -->
-    <section class="slider-container">
-        <div class="slider-for" id="sliderHomepageBanner">
-            <div class="slider-item">
-                <img src="https://m.media-amazon.com/images/I/91Sy3S-198L._AC_UL480_FMwebp_QL65_.jpg" alt="book1">
-            </div>
-
-            <div class="slider-item">
-                <img src="https://m.media-amazon.com/images/I/71cpL5zOtBL._AC_UL960_FMwebp_QL65_.jpg" alt="book2">
-            </div>
-
-            <div class="slider-item">
-                <img src="https://m.media-amazon.com/images/I/81999o0oq+L._AC_UL480_FMwebp_QL65_.jpg" alt="book3">
-            </div>
-
-            <div class="slider-item">
-                <img src="https://m.media-amazon.com/images/I/81pOIaiJRUL._AC_UL480_FMwebp_QL65_.jpg" alt="book4">
-            </div>
-
-            <div class="slider-item">
-                <img src="https://m.media-amazon.com/images/I/81pF6fAUOOL._SL1500_.jpg" alt="book5">
-            </div>
-
-            <div class="slider-item">
-                <img src="https://m.media-amazon.com/images/I/91lOIcyFBiL._SL1500_.jpg" alt="book6">
-            </div>
-        </div>
-
-        <div class="slider-nav">
-            <div class="slider-item">
-                <img src="https://m.media-amazon.com/images/I/91Sy3S-198L._AC_UL480_FMwebp_QL65_.jpg" alt="book1">
-            </div>
-
-            <div class="slider-item">
-                <img src="https://m.media-amazon.com/images/I/71cpL5zOtBL._AC_UL960_FMwebp_QL65_.jpg" alt="book2">
-            </div>
-
-            <div class="slider-item">
-                <img src="https://m.media-amazon.com/images/I/81999o0oq+L._AC_UL480_FMwebp_QL65_.jpg" alt="book3">
-            </div>
-
-            <div class="slider-item">
-                <img src="https://m.media-amazon.com/images/I/81pOIaiJRUL._AC_UL480_FMwebp_QL65_.jpg" alt="book4">
-            </div>
-
-        </div>
-
-    </section>
-
     <!-- New Release Section -->
-    <div class="hp-new-release">
+    <section class="hp-new-release container">
         <div class="hp-new-release-title">
             <h2>New Release</h2>
-            <a href="html/reviewing-books.html">View All</a>
+            <a href="html/search.html">View All</a>
         </div>
 
         <div class="hp-new-release-content">
-            <a class="hp-new-release-book" href="html/reviewing-books.html">
+            <div class="hp-new-release-book">
                 <div class="hp-new-release-book-img">
                     <img src="https://m.media-amazon.com/images/I/91lOIcyFBiL._SL1500_.jpg" alt="book1">
                 </div>
@@ -176,11 +128,19 @@
                     <p>Author</p>
                     <p>Category</p>
                     <p>Release Date</p>
-                    <p>Rating</p>
+                    <p>Quantity</p>
+                    <p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                    <a href="html/reviewing-books.html" class="btn btn-primary btn-borrow">Borrow</a>
                 </div>
-            </a>
+            </div>
 
-            <a class="hp-new-release-book" href="html/reviewing-books.html">
+            <div class="hp-new-release-book">
                 <div class="hp-new-release-book-img">
                     <img src="https://m.media-amazon.com/images/I/81pF6fAUOOL._SL1500_.jpg" alt="book2">
                 </div>
@@ -190,11 +150,19 @@
                     <p>Author</p>
                     <p>Category</p>
                     <p>Release Date</p>
-                    <p>Rating</p>
+                    <p>Quantity</p>
+                    <p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                    <a href="html/reviewing-books.html" class="btn btn-primary btn-borrow">Borrow</a>
                 </div>
-            </a>
+            </div>
 
-            <a class="hp-new-release-book" href="html/reviewing-books.html">
+            <div class="hp-new-release-book">
                 <div class="hp-new-release-book-img">
                     <img src="https://m.media-amazon.com/images/I/81pOIaiJRUL._AC_UL480_FMwebp_QL65_.jpg"
                          alt="book3">
@@ -205,21 +173,84 @@
                     <p>Author</p>
                     <p>Category</p>
                     <p>Release Date</p>
-                    <p>Rating</p>
+                    <p>Quantity</p>
+                    <p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                    <a href="html/reviewing-books.html" class="btn btn-primary btn-borrow">Borrow</a>
                 </div>
-            </a>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <section class="slider-wrapper">
+        <!-- Slider Section -->
+        <section class="slider-container">
+            <div class="slider-for" id="sliderHomepageBanner">
+                <div class="slider-item">
+                    <img src="https://m.media-amazon.com/images/I/91Sy3S-198L._AC_UL480_FMwebp_QL65_.jpg" alt="book1">
+                </div>
+
+                <div class="slider-item">
+                    <img src="https://m.media-amazon.com/images/I/71cpL5zOtBL._AC_UL960_FMwebp_QL65_.jpg" alt="book2">
+                </div>
+
+                <div class="slider-item">
+                    <img src="https://m.media-amazon.com/images/I/81999o0oq+L._AC_UL480_FMwebp_QL65_.jpg" alt="book3">
+                </div>
+
+                <div class="slider-item">
+                    <img src="https://m.media-amazon.com/images/I/81pOIaiJRUL._AC_UL480_FMwebp_QL65_.jpg" alt="book4">
+                </div>
+
+                <div class="slider-item">
+                    <img src="https://m.media-amazon.com/images/I/81pF6fAUOOL._SL1500_.jpg" alt="book5">
+                </div>
+
+                <div class="slider-item">
+                    <img src="https://m.media-amazon.com/images/I/91lOIcyFBiL._SL1500_.jpg" alt="book6">
+                </div>
+            </div>
+
+            <div class="slider-nav">
+                <div class="slider-item">
+                    <img src="https://m.media-amazon.com/images/I/91Sy3S-198L._AC_UL480_FMwebp_QL65_.jpg" class="slider-item-nav-img" alt="book1">
+                </div>
+
+                <div class="slider-item">
+                    <img src="https://m.media-amazon.com/images/I/71cpL5zOtBL._AC_UL960_FMwebp_QL65_.jpg" class="slider-item-nav-img" alt="book2">
+                </div>
+
+                <div class="slider-item">
+                    <img src="https://m.media-amazon.com/images/I/81999o0oq+L._AC_UL480_FMwebp_QL65_.jpg" class="slider-item-nav-img" alt="book3">
+                </div>
+
+                <div class="slider-item">
+                    <img src="https://m.media-amazon.com/images/I/81pOIaiJRUL._AC_UL480_FMwebp_QL65_.jpg" class="slider-item-nav-img" alt="book4">
+                </div>
+
+            </div>
+
+        </section>
+        <div class="slider-title">
+            <span style="background: linear-gradient(90.72deg, #cbfdb1 3.49%, #acbff1 50.67%, #efa7ec 100.79%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Explore & read</span>
+            <span>millions of ebooks, audiobooks & magazines from your library</span>
+        </div>
+    </section>
 
     <!-- Top Rated Section -->
-    <div class="hp-top-rated">
+    <section class="hp-top-rated container">
         <div class="hp-top-rated-title">
             <h2>Top Rated</h2>
-            <a href="html/reviewing-books.html">View All</a>
+            <a href="html/search.html">View All</a>
         </div>
 
         <div class="hp-top-rated-content">
-            <a class="hp-top-rated-book" href="html/reviewing-books.html">
+            <div class="hp-top-rated-book">
                 <div class="hp-top-rated-book-img">
                     <img src="https://m.media-amazon.com/images/I/91Sy3S-198L._AC_UL480_FMwebp_QL65_.jpg"
                          alt="book1">
@@ -230,11 +261,19 @@
                     <p>Author</p>
                     <p>Category</p>
                     <p>Release Date</p>
-                    <p>Rating</p>
+                    <p>Quantity</p>
+                    <p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                    <a href="html/reviewing-books.html" class="btn btn-primary btn-borrow">Borrow</a>
                 </div>
-            </a>
+            </div>
 
-            <a class="hp-top-rated-book" href="html/reviewing-books.html">
+            <div class="hp-top-rated-book">
                 <div class="hp-top-rated-book-img">
                     <img src="https://m.media-amazon.com/images/I/71cpL5zOtBL._AC_UL960_FMwebp_QL65_.jpg"
                          alt="book2">
@@ -245,11 +284,19 @@
                     <p>Author</p>
                     <p>Category</p>
                     <p>Release Date</p>
-                    <p>Rating</p>
+                    <p>Quantity</p>
+                    <p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                    <a href="html/reviewing-books.html" class="btn btn-primary btn-borrow">Borrow</a>
                 </div>
-            </a>
+            </div>
 
-            <a class="hp-top-rated-book" href="html/reviewing-books.html">
+            <div class="hp-top-rated-book">
                 <div class="hp-top-rated-book-img">
                     <img src="https://m.media-amazon.com/images/I/81999o0oq+L._AC_UL480_FMwebp_QL65_.jpg"
                          alt="book3">
@@ -260,21 +307,29 @@
                     <p>Author</p>
                     <p>Category</p>
                     <p>Release Date</p>
-                    <p>Rating</p>
+                    <p>Quantity</p>
+                    <p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                    <a href="html/reviewing-books.html" class="btn btn-primary btn-borrow">Borrow</a>
                 </div>
-            </a>
+            </div>
         </div>
-    </div>
+    </section>
 
     <!-- Top Borrowed Section -->
-    <div class="hp-top-borrowed">
+    <section class="hp-top-borrowed container">
         <div class="hp-top-borrowed-title">
             <h2>Top Borrowed</h2>
-            <a href="html/reviewing-books.html">View All</a>
+            <a href="html/search.html">View All</a>
         </div>
 
         <div class="hp-top-borrowed-content">
-            <a class="hp-top-borrowed-book" href="html/reviewing-books.html">
+            <div class="hp-top-borrowed-book">
                 <div class="hp-top-borrowed-book-img">
                     <img src="https://m.media-amazon.com/images/I/811nPTHOsgL._AC_UL480_FMwebp_QL65_.jpg"
                          alt="book1">
@@ -284,10 +339,19 @@
                     <h3>Book Title</h3>
                     <p>Author</p>
                     <p>Category</p>
+                    <p>Quantity</p>
+                    <p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                    <a href="html/reviewing-books.html" class="btn btn-primary btn-borrow">Borrow</a>
                 </div>
-            </a>
+            </div>
 
-            <a class="hp-top-borrowed-book" href="html/reviewing-books.html">
+            <div class="hp-top-borrowed-book">
                 <div class="hp-top-borrowed-book-img">
                     <img src="https://m.media-amazon.com/images/I/71V2hgUlf+L._AC_UL480_FMwebp_QL65_.jpg"
                          alt="book2">
@@ -297,10 +361,19 @@
                     <h3>Book Title</h3>
                     <p>Author</p>
                     <p>Category</p>
+                    <p>Quantity</p>
+                    <p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                    <a href="html/reviewing-books.html" class="btn btn-primary btn-borrow">Borrow</a>
                 </div>
-            </a>
+            </div>
 
-            <a class="hp-top-borrowed-book" href="html/reviewing-books.html">
+            <div class="hp-top-borrowed-book">
                 <div class="hp-top-borrowed-book-img">
                     <img src="https://m.media-amazon.com/images/I/81XWWgotqvL._AC_UL480_FMwebp_QL65_.jpg"
                          alt="book3">
@@ -310,11 +383,19 @@
                     <h3>Book Title</h3>
                     <p>Author</p>
                     <p>Category</p>
+                    <p>Quantity</p>
+                    <p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                    <a href="html/reviewing-books.html" class="btn btn-primary btn-borrow">Borrow</a>
                 </div>
-            </a>
+            </div>
         </div>
-    </div>
-
+    </section>
 
     <script>
         // Navigation Slider
